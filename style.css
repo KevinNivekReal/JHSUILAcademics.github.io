@@ -1,0 +1,58 @@
+
+@font-face {
+    font-family: "kollektif";
+    src: url("kollektif-font/Kollektif.ttf");
+}
+
+@font-face {
+    font-family: "garet";
+    src: url("garet-font/Garet-Book.ttf");
+}
+
+@font-face {
+    font-family: "amaranth";
+    src: url("amaranth-font/Amaranth-Regular.ttf");
+}
+
+body {
+    background-color: #e5eefd;
+    overflow:scroll;
+    margin:0;
+}
+
+.body-header {
+    font-family: "kollektif",sans-serif;
+}
+
+.body-text {
+    font-family: "garet", sans-serif;
+}
+
+.text-header {
+    font-family: "amaranth", sans-serif;
+}
+
+.navbar {
+    display:none;
+}
+
+.header {
+    background-color:white;
+    position:relative;
+    padding-top:10px;
+    padding-left:10px;
+    margin-left:0px;
+    display:block;
+}
+
+.text-header {
+    margin-right:40px;
+
+    float:right;
+
+    background-color:lightblue;
+}
+
+.body {
+    display:block;
+}
