@@ -41,18 +41,19 @@ body {
     position:relative;
     padding-top:10px;
     padding-left:10px;
-    margin-left:0px;
-    display:block;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .text-header {
     margin-right:40px;
-
-    float:right;
-
     background-color:lightblue;
+    font-size: 1.2em;
 }
 
-.body {
-    display:block;
+
+
+.body-container {
+    width: 50%;
 }
