@@ -9,18 +9,18 @@
 <body>
     <div class="header">
         <img class="logo" src="images/logo.png" height="50px" >
-        <p class="text-header">
-            <a href="schedule.html">Schedule</a>
-        </p>
-        <p class="text-header">
-            <a href="coaches.html">Coaches</a>
-        </p>
-        <p class="text-header">
+        
+        <div class="text-header" onclick="openMenu()" style="margin-left:100px">
             Contests
             <img class="carrot" src="images/dropdown-carrot.png" height="10px">
-        </p>
-        
-
+        </div>
+        <div class="text-header">
+            <a href="coaches.html">Coaches</a>
+        </div>
+        <div class="text-header">
+            <a href="schedule.html">Schedule</a>
+        </div>
+        <img class="search-button text-header" src="images/search-icon.png" height="20px">
         <div class="navbar">
             <h6 class="navbar-title">Math</h6>
             <p class="navbar-text"><a href="">Accounting</a></p>
@@ -62,44 +62,46 @@
 
         
         
-        <img class="search-button" src="images/search-icon.png" height="1vh">
+        
     </div>
 
     <div class="body">
-        <h1 class="body-header">
-            For Everybody.
-        </h1>
-        <h3 class="body-text">
-            UIL, University Interscholastic League, boasts several academic contests for every type of person.
-            
-            Whether you love Math or love public speaking, there is a contest for you.
-        </h3>
-        <img id="for-everybody-img" src="">
+        <div class="body-container">
+            <h1 class="body-header">
+                For Everybody.
+            </h1>
+            <h3 class="body-text">
+                UIL, University Interscholastic League, boasts several academic contests for every type of person.
+                
+                Whether you love Math or love public speaking, there is a contest for you.
+            </h3>
+            <img id="for-everybody-img" src="">
+        </div>
+        <div class="body-container">
+            <img id="educational-competition-img" src="">
+            <h1 class="body-header">
+                Educational Competition.
+            </h1>
+            <h3 class="body-text">
+                UIL offers organized competitions between schools and districts.
 
-
-        <img id="educational-competition-img" src="">
-        <h1 class="body-header">
-            Educational Competition.
-        </h1>
-        <h3 class="body-text">
-            UIL offers organized competitions between schools and districts.
-
-            Experience the fun of competition while meeting new people from different backgrounds.
-        </h3>
-
-        <h1 class="body-header">
-            Easy To Join
-        </h1>
-        <h3 class="body-text">
-            To participate in any JHS UIL Academic contest, all you have to do is 
-            1.  Contact the contest’s coach
-            2.  Attend a few meetings to practice some skills
-            3.  Go to the competitions
-  
-            And that’s it!
-        </h3>
-        <img id="easy-to-join-img" src="">
-
+                Experience the fun of competition while meeting new people from different backgrounds.
+            </h3>
+        </div>
+        <div class="body-container">
+            <h1 class="body-header">
+                Easy To Join
+            </h1>
+            <h3 class="body-text">
+                To participate in any JHS UIL Academic contest, all you have to do is 
+                1.  Contact the contest’s coach
+                2.  Attend a few meetings to practice some skills
+                3.  Go to the competitions
+    
+                And that’s it!
+            </h3>
+            <img id="easy-to-join-img" src="">
+        </div>
         <img id="final-img" src="">
         <h1 class="body-header">
             So what are you waiting for?
@@ -124,5 +126,6 @@
         </h6>
     </div>
 
+    <script src="script.js"></script>
 </body>
 </html>
