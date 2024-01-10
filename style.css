@@ -14,6 +14,11 @@
     src: url("amaranth-font/Amaranth-Regular.ttf");
 }
 
+@font-face {
+    font-family: "baron";
+    src: url("Baron\ Neue\ -\ Personal\ license/Baron Neue.otf")
+}
+
 body {
     background-color: #e5eefd;
     overflow:scroll;
@@ -33,7 +38,16 @@ body {
 }
 
 .navbar {
-    display:none;
+    display:block;
+
+}
+
+.navbar-title {
+    font-family: "kollektif", sans-serif;
+}
+
+.navbar-text {
+    font-family: "baron", sans-serif;
 }
 
 .header {
@@ -72,5 +86,9 @@ body {
   
   .join-now:hover {
     transform: scale(1.1);
+    cursor: pointer;
+  }
+
+  .contests-btn:hover {
     cursor: pointer;
   }
