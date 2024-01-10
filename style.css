@@ -57,3 +57,20 @@ body {
 .body-container {
     width: 50%;
 }
+
+.join-now {
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    height: 50px;
+    width: 90px;
+    background-color: #302e3b;
+    border: none;
+    margin-left: 100px;
+    
+  }
+  
+  .join-now:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
