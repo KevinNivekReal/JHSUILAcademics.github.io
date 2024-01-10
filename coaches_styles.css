@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "kollektif";
+    src: url("kollektif-font/Kollektif.ttf");
+}
+
+@font-face {
+    font-family: "garet";
+    src: url("garet-font/Garet-Book.ttf");
+}
+
+@font-face {
+    font-family: "amaranth";
+    src: url("amaranth-font/Amaranth-Regular.ttf");
+}
+
+h1, h2, h3, li {
+    font-family: "garet", sans-serif;
+}
+
+.coaches {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.coach-individual {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    margin: 1rem;
+    padding: 1%;
+    border: .15rem solid gray;
+    border-radius: 5%;
+    box-shadow: 2px 2px 2px 2px rgb(225, 227, 235);
+
+    
+}
