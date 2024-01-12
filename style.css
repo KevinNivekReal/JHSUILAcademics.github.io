@@ -38,7 +38,7 @@ body {
 }
 
 .navbar {
-    display:block;
+    display:flex;
 
 }
 
@@ -49,6 +49,11 @@ body {
 .navbar-text {
     font-family: "baron", sans-serif;
 }
+
+.column {
+    width:150px;
+}
+
 
 .header {
     background-color:white;
@@ -92,3 +97,5 @@ body {
   .contests-btn:hover {
     cursor: pointer;
   }
+
+  
