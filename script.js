@@ -10,15 +10,17 @@ function openMenu() {
         navbar.style.display ="flex";
         setTimeout(() => {
             navbar.style.opacity = 1;
+            //document.getElementsByClassName("body")[0].style.opacity = .5;   
         }, this.animationDelay + 20);
-        document.getElementsByClassName("body")[0].style.opacity = .5;   
+        
+        
     } else {
         
         setTimeout(() => {
             navbar.style.opacity = 0;
-            
+            //document.getElementsByClassName("body")[0].style.opacity = 1; 
         }, this.animationDelay + 20);   
-        document.getElementsByClassName("body")[0].style.opacity = 1; 
+        
         setTimeout(() => {
             navbar.style.display = "none";
         }, 500); 
