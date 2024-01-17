@@ -3,42 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="header">
-        <img id="logo" src="">
-        <p class="text-header">
-            Contests
-        </p>
-        <p class="text-header">
-            <a href="coaches.html">Coaches</a>
-        </p>
-        <p class="text-header">
-            <a href="schedule.html">Schedule</a>
-        </p>
-        <img id="search-button" src="">
+        
+        <img class="logo" src="images/logo.png" height="50px" >
+        <ul>
+            <li class="text-header  contests-btn" onclick="openMenu()" >
+                Contests
+                <img class="carrot" id="carrot" src="images/dropdown-carrot.png" height="10px">
+            </li>
+            <li class="text-header">
+                <a href="coaches.html">Coaches</a>
+            </li>
+            <li class="text-header">
+                <a href="schedule.html">Schedule</a>
+            </li>
+            <input type="text" id="search">
+            <label for="search"><img class="search-button text-header" src="images/search-icon.png" height="24px">
+            </label>
+            <div class="navbar" id="navbar">
+                <div class="column">
+                    <h2 class="navbar-title">Math</h2>
+                    <p class="navbar-text"><a href="">Accounting</a></p>
+                    <p class="navbar-text"><a href="">Calculator Applications</a></p>
+                    <p class="navbar-text"><a href="">Computer Applications</a></p>
+                    <p class="navbar-text"><a href="">Mathematics</a></p>
+                    <p class="navbar-text"><a href="">Number Sense</a></p>
+
+                    <h2 class="navbar-title">Reading</h2>
+                    <p class="navbar-text"><a href="">Literary Criticism</a></p>
+                    <p class="navbar-text"><a href="">poetry Interpretation</a></p>
+                    <p class="navbar-text"><a href="">prose interpretation</a></p>
+                </div>
+                <div class="column">
+                    <h2 class="navbar-title">Writing</h2>
+                    <p class="navbar-text"><a href="">Copy Editing</a></p>
+                    <p class="navbar-text"><a href="">Editorial Writing</a></p>
+                    <p class="navbar-text"><a href="">Feature Writing</a></p>
+                    <p class="navbar-text"><a href="">Healine Writing</a></p>
+                    <p class="navbar-text"><a href="">News Writing</a></p>
+                    <p class="navbar-text"><a href="">ready Writing</a></p>
+                    <p class="navbar-text"><a href="">Spelling</a></p>
+                    <p class="navbar-text"><a href="">Latino History Essay</a></p>
+                    <p class="navbar-text"><a href="">Barabara Jones Historical Essay</a></p>
+                </div>
+                <div class="column">
+                    <h2 class="navbar-title">Social Studies</h2>
+                    <p class="navbar-text"><a href="">Current Issues & Events</a></p>
+                    <p class="navbar-text"><a href="">Social Studies</a></p>
+                    <p class="navbar-text"><a href="">Informative Speaking</a></p>
+
+                    <h2 class="navbar-title">Debate</h2>
+                    <p class="navbar-text"><a href="">Cross-Examination</a></p>
+                    <p class="navbar-text"><a href="">Congress</a></p>
+                    <p class="navbar-text"><a href="">Lincoln Douglass</a></p>
+                </div>
+                <div class="column">
+                    <h2 class="navbar-title">Science</h2>
+                    <p class="navbar-text"><a href="">Computer programming</a></p>
+                    <p class="navbar-text"><a href="">Computer Science Written Test</a></p>
+                    <p class="navbar-text"><a href="">robotics</a></p>
+                    <p class="navbar-text"><a href="">Science</a></p>
+
+                    <h2 class="navbar-title">Theater</h2>
+                    <p class="navbar-text"><a href="">one Act play</a></p>
+                    <p class="navbar-text"><a href="">Theatrical Design</a></p>
+                </div>
+                
+            </div>
+        </ul>
+        
+        
     </div>
-    <div>
-        <h1 class="email-header">
-            Send me an email
-        </h1>
-        <h3 class="input-label">
-            Your email
-        </h3>
-        <input type="text" class="thin-bar-input">
-        <h3 class="input-label">
-            Subject
-        </h3>
-        <input type="text" class="thin-bar-input">
-        <h3 class="input-label">
-            Your Name
-        </h3>
-        <input type="text" class="thin-bar-input">
-        <h3 class="input-label">
-            Message
-        </h3>
-        <input type="text" class="rectangle-input">
+    <div class="body" style="background-color: white">
+        <div class="email-wrapper">
+            <div class="email-header">
+                <h1 class="email-header-text">
+                    Send me an Email
+                </h1>
+            </div>
+            <div class="email-left">
+                <h3 class="input-label">
+                    Your email
+                </h3>
+                <input type="text" class="thin-bar-input">
+                <h3 class="input-label">
+                    Subject
+                </h3>
+                <input type="text" class="thin-bar-input">
+                <h3 class="input-label">
+                    Your Name
+                </h3>
+            </div>
+            
+            <input type="text" class="thin-bar-input">
+            <h3 class="input-label">
+                Message
+            </h3>
+            <input type="text" class="rectangle-input">
+        </div>
+        
     </div>
     <div class="footer">
         <h6 class="text-footer">
@@ -54,5 +121,6 @@
             <a href="https://www.uiltexas.org/academics">Official UIL Academics Link</a>
         </h6>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
