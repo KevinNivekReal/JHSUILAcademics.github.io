@@ -116,7 +116,7 @@ body {
     display:inline-flex;
 }
 
-input {
+#search {
     border:0;
     border-bottom:2px solid black;
     font-size:1em;
@@ -124,7 +124,7 @@ input {
     font-weight:600;
     margin:0;
 }
-input:focus {
+#search:focus {
     outline:none;
     background-color: #ebedeb;
     border-radius: 10px;
@@ -222,3 +222,72 @@ input:focus {
 .footer a:hover {
     text-decoration:underline;
 }
+
+/*for the contact pages*/
+.email-header {
+    margin-top:0;
+    width:100%;
+    padding:10px;
+    background-color: #aabfb2;
+}
+
+.email-header-text {
+    font-size: 2em;
+    text-align: center;
+    font-family: "kollektif", sans-serif;
+    font-weight:1000;
+}
+
+
+.input-label {
+    font-family: "kollektif", sans-serif;
+    font-size:1.5em;
+}
+
+.input-label:not(.big-rectangle-input-label) {
+    margin-left: 20px;
+}
+
+.thin-bar-input {
+    width:90%;
+    height:50px;
+    background-color: #f2f2f2;
+    border: none;
+    margin-left:20px;
+    font-size:1em;
+    font-family: "garet", sans-serif;
+    font-weight:600;
+    padding-left:5px;
+}
+
+.rectangle-input {
+    background-color: #f2f2f2;
+    border: none;
+    width:90%;
+    height:280px;
+    resize:none;
+    font-size:1em;
+    font-family: "garet", sans-serif;
+    font-weight:600;
+    padding:10px;
+}
+
+
+.email-wrapper {
+    display:flex;
+    margin-bottom:10px;
+    border: solid 2px black;
+    height:100%;
+}
+
+.email-left {
+    width:50%;
+    height:100%;
+}
+
+.email-right {
+    width:50%;
+}
+
+
+
