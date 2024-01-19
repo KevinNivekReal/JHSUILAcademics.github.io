@@ -6,7 +6,7 @@
     <title>Contact Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body style="background-color: white;">
     <div class="header">
         
         <img class="logo" src="images/logo.png" height="50px" >
@@ -78,36 +78,42 @@
         
         
     </div>
-    <div class="body" style="background-color: white">
-        <div class="email-wrapper">
+    <div class="body">
+        
             <div class="email-header">
                 <h1 class="email-header-text">
                     Send me an Email
                 </h1>
             </div>
-            <div class="email-left">
-                <h3 class="input-label">
-                    Your email
-                </h3>
-                <input type="text" class="thin-bar-input">
-                <h3 class="input-label">
-                    Subject
-                </h3>
-                <input type="text" class="thin-bar-input">
-                <h3 class="input-label">
-                    Your Name
-                </h3>
+            <div class="email-wrapper">
+                <div class="email-left">
+                    <h3 class="input-label">
+                        Your email
+                    </h3>
+                    <form>
+                    <input type="email" class="thin-bar-input" pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" required>
+                    <input type="submit">
+                </form>
+                    <h3 class="input-label">
+                        Subject
+                    </h3>
+                    <input type="text" class="thin-bar-input">
+                    <h3 class="input-label">
+                        Your Name
+                    </h3>
+                    <input type="text" class="thin-bar-input">
+                </div>
+                <div class="email-right">
+                
+                    <h3 class="input-label big-rectangle-input-label">
+                        Message
+                    </h3>
+                    <textarea class="rectangle-input"></textarea>
+                </div>
             </div>
-            
-            <input type="text" class="thin-bar-input">
-            <h3 class="input-label">
-                Message
-            </h3>
-            <input type="text" class="rectangle-input">
-        </div>
-        
+        <a href="https://aemail.com/nZ17"><button class="email-button">Join Now!</button></a>
     </div>
-    <div class="footer">
+    <div class="footer" style="position:absolute;margin:1px;bottom:0%;">
         <h6 class="text-footer">
             Managed and Owned By _____
         </h6>
