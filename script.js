@@ -1,3 +1,4 @@
+/*This is for the navigation bar*/
 let carrot = document.getElementById("carrot");
 let navbar = document.getElementById("navbar");
 let rotation = 0;
@@ -28,3 +29,15 @@ function openMenu() {
         
     }
 }
+
+/*This is for the textarea in the contact page*/
+
+
+window.addEventListener("DOMContentLoaded", (event) => {
+    let input = document.getElementById("input-join-name")
+    input.addEventListener('input', function() {
+    document.getElementById("join-name").innerHTML = this.value;
+    },)
+});
+
+
