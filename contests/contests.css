@@ -1,0 +1,96 @@
+@font-face {
+    font-family: "kollektif", sans-serif;
+    src: url("../kollektif-font/Kollektif.ttf");
+}
+
+@font-face {
+    font-family: "garet", sans-serif;
+    src: url("../garet-font/Garet-Book.otf");
+}
+
+/* For the summary section */
+.summary-section {
+    height:500px;
+    width:100%;
+    display:flex;
+    margin-top:10px;
+}
+
+.name-column,.summary-column {
+    width:50%;
+}
+
+.section-header { /* this style goes for all the section headers */
+    font-family: "kollektif", sans-serif;
+    font-size:3em;
+    font-weight: 900;
+    text-align: center;
+    margin:10px;
+}
+.summary-box {
+    width:50%;
+    height:100px;
+    margin:25px;
+    padding:10px;
+    border: 5px solid black;
+    position:relative;
+    left:25%;
+}
+
+.summary-title {
+    font-family: "kollektif", sans-serif;
+    font-size:1.5em;
+    font-weight:900;
+    text-align:center;
+}
+
+.summary-description {
+    font-family: "garet", sans-serif;
+    font-weight:900;
+    font-size:1em;
+    text-align:center;
+}
+
+/* for the resources section */
+.resources-box {
+    height:750px;
+    width:100%;
+}
+
+.resources-box h1 {
+    margin-top:70px;
+    margin-bottom:50px;
+}
+.resources-wrapper {
+    display:flex;
+    width:100%;
+    justify-content: space-around;
+    height:95%;
+}
+
+.resources-column {
+    width:25%;
+    height:90%;
+    border:5px solid black;
+}
+
+/* for the applications section */
+.applications-box {
+    width:100%;
+    margin-top:100px;
+    height:400px;
+}
+
+.description-box {
+    width:60%;
+    position:relative;
+    left:20%;
+    height:50%;
+}
+
+.applications-description {
+    font-family: "garet", sans-serif;
+    font-weight:900;
+    font-size: 1.5em;
+    text-align:center;
+}

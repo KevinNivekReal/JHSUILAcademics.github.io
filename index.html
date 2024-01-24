@@ -3,110 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JHS UIL Academics</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="header">
+        
         <img class="logo" src="images/logo.png" height="50px" >
-        
-        <div class="text-header  contests-btn" onclick="openMenu()" style="margin-left:100px;">
-            Contests
-            <img class="carrot" id="carrot" src="images/dropdown-carrot.png" height="10px">
-        </div>
-        <div class="text-header">
-            <a href="coaches.html">Coaches</a>
-        </div>
-        <div class="text-header">
-            <a href="schedule.html">Schedule</a>
-        </div>
-        <img class="search-button text-header" src="images/search-icon.png" height="20px">
-        <div class="navbar" id="navbar">
-            <h6 class="navbar-title">Math</h6>
-            <p class="navbar-text"><a href="">Accounting</a></p>
-            <p class="navbar-text"><a href="">Caculator Application</a></p>
-            <p class="navbar-text"><a href="">Computer Applications</a></p>
-            <p class="navbar-text"><a href="">Mathematics</a></p>
-            <p class="navbar-text"><a href="">Number Sense</a></p>
-            <h6 class="navbar-title">Reading</h6>
-            <p class="navbar-text"><a href="">Literary Criticism</a></p>
-            <p class="navbar-text"><a href="">Poetry Interpretation</a></p>
-            <p class="navbar-text"><a href="">Prose interpretation</a></p>
-            <h6 class="navbar-title">Writing</h6>
-            <p class="navbar-text"><a href="">Copy Editing</a></p>
-            <p class="navbar-text"><a href="">Editorial Writing</a></p>
-            <p class="navbar-text"><a href="">Feature Writing</a></p>
-            <p class="navbar-text"><a href="">Healine Writing</a></p>
-            <p class="navbar-text"><a href="">News Writing</a></p>
-            <p class="navbar-text"><a href="">Ready Writing</a></p>
-            <p class="navbar-text"><a href="">Spelling</a></p>
-            <p class="navbar-text"><a href="">Latino History Essay</a></p>
-            <p class="navbar-text"><a href="">Barabara Jones Historical Essay</a></p>
-            <h6 class="navbar-title">Social Studies</h6>
-            <p class="navbar-text"><a href="">Current Issues & Events</a></p>
-            <p class="navbar-text"><a href="">Social Studies</a></p>
-            <p class="navbar-text"><a href="">Informative Speaking</a></p>
-            <h6 class="navbar-title">Debate</h6>
-            <p class="navbar-text"><a href="">Cross-Examination</a></p>
-            <p class="navbar-text"><a href="">Congress</a></p>
-            <p class="navbar-text"><a href="">Lincoln Douglass</a></p>
-            <h6 class="navbar-title">Science</h6>
-            <p class="navbar-text"><a href="">Computer Programming</a></p>
-            <p class="navbar-text"><a href="">Computer Science Written Test</a></p>
-            <p class="navbar-text"><a href="">Robotics</a></p>
-            <p class="navbar-text"><a href="">Science</a></p>
-            <h6 class="navbar-title">Theater</h6>
-            <p class="navbar-text"><a href="">One Act Play</a></p>
-            <p class="navbar-text"><a href="">Theatrical Design</a></p>
-        </div>
+        <ul>
+            <li class="text-header">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="text-header  contests-btn" onclick="openMenu()" >
+                Contests
+                <img class="carrot" id="carrot" src="images/dropdown-carrot.png" height="10px">
+            </li>
+            <li class="text-header">
+                <a href="coaches.html">Coaches</a>
+            </li>
+            <li class="text-header">
+                <a href="schedule.html">Schedule</a>
+            </li>
+            <input type="text" id="search">
+            <label for="search"><img class="search-button text-header" src="images/search-icon.png" height="24px">
+            </label>
+            <div class="navbar" id="navbar">
+                <div class="column">
+                    <h2 class="navbar-title">Math</h2>
+                    <p class="navbar-text"><a href="contests/accounting.html">Accounting</a></p>
+                    <p class="navbar-text"><a href="contests/calculator-applications.html">Calculator Applications</a></p>
+                    <p class="navbar-text"><a href="contests/mathematics.html">Mathematics</a></p>
+                    <p class="navbar-text"><a href="contests/number-sense.html">Number Sense</a></p>
 
-        
+                    <h2 class="navbar-title">Reading</h2>
+                    <p class="navbar-text"><a href="contests/literary-criticism.html">Literary Criticism</a></p>
+                </div>
+                <div class="column">
+                    <h2 class="navbar-title">Writing</h2>
+                    <p class="navbar-text"><a href="contests/copy-editing.html">Copy Editing</a></p>
+                    <p class="navbar-text"><a href="contests/editorial-writing.html">Editorial Writing</a></p>
+                    <p class="navbar-text"><a href="contests/feature-writing.html">Feature Writing</a></p>
+                    <p class="navbar-text"><a href="contests/headline-writing.html">Headline Writing</a></p>
+                    <p class="navbar-text"><a href="contests/news-writing.html">News Writing</a></p>
+                    <p class="navbar-text"><a href="contests/ready-writing.html">ready Writing</a></p>
+                    <p class="navbar-text"><a href="contests/spelling.html">Spelling</a></p>                
+                </div>
+                <div class="column">
+                    <h2 class="navbar-title">Social Studies</h2>
+                    <p class="navbar-text"><a href="contests/current-issues.html">Current Issues & Events</a></p>
+                    <p class="navbar-text"><a href="contests/social-studies.html">Social Studies</a></p>
+                    
+                    <h2 class="navbar-title">Debate</h2>
+                    <p class="navbar-text"><a href="contests/speech-and-debate.html">Speech and Debate</a></p>
+                    
+                    <h2 class="navbar-title">Theater</h2>
+                    <p class="navbar-text"><a href="contests/one-act-play.html">one Act play</a></p>
+                </div>
+                <div class="column">
+                    <h2 class="navbar-title">Science</h2>
+                    <p class="navbar-text"><a href="contests/computer-programming.html">Computer programming</a></p>
+                    <p class="navbar-text"><a href="contests/computer-science-written-test.html">Computer Science Written Test</a></p>
+                    <p class="navbar-text"><a href="contests/robotics.html">robotics</a></p>
+                    <p class="navbar-text"><a href="contests/science.html">Science</a></p>                
+                </div>
+                
+            </div>
+        </ul>
         
         
     </div>
 
     <div class="body">
-        <div class="body-container">
-            <h1 class="body-header">
-                For Everybody.
-            </h1>
-            <h3 class="body-text">
-                UIL, University Interscholastic League, boasts several academic contests for every type of person.
-                
-                Whether you love Math or love public speaking, there is a contest for you.
-            </h3>
-            <img id="for-everybody-img" src="">
-        </div>
-        <div class="body-container">
-            <img id="educational-competition-img" src="">
-            <h1 class="body-header">
-                Educational Competition.
-            </h1>
-            <h3 class="body-text">
-                UIL offers organized competitions between schools and districts.
+        <div class="body-container" >
+            <div class="container-text">
+                <h1 class="body-header">
+                    For Everybody.
+                </h1>
+                <h3 class="body-text" style="text-align:left">
+                    
+                    UIL, University Interscholastic League, boasts several academic contests for every type of person.
+                    
+                    Whether you love Math or love public speaking, there is a contest for you.
 
-                Experience the fun of competition while meeting new people from different backgrounds.
-            </h3>
+                </h3>
+            </div>
+            <img src="images/for-everyone.png" alt="graduation-hat" style="float:right;position:relative; right:5%;z-index:-1;padding-top:5%;margin-left:5%;" width="60%">
+        </div>
+        
+        <div class="body-container">
+            <div class="container-text" style="order:2">
+                <h1 class="body-header">
+                    Educational Competition.
+                </h1>
+                <h3 class="body-text">
+                    UIL offers organized competitions between schools and districts.
+
+                    Experience the fun of competition while meeting new people from different backgrounds.
+                </h3>
+                
+            </div>
+            <img id="educational-competition-img" src="images/educational-competition.png" style="z-index:-1;order:1;margin-right:5%;" width="50%">
         </div>
         <div class="body-container">
-            <h1 class="body-header">
-                Easy To Join
-            </h1>
-            <h3 class="body-text">
-                To participate in any JHS UIL Academic contest, all you have to do is 
-                1.  Contact the contest’s coach
-                2.  Attend a few meetings to practice some skills
-                3.  Go to the competitions
-    
-                And that’s it!
-            </h3>
-            <img id="easy-to-join-img" src="">
+            <div class="container-text">
+                <h1 class="body-header">
+                    Easy To Join
+                </h1>
+                <h3 class="body-text">
+                    To participate in any JHS UIL Academic contest, all you have to do is 
+                    <br>
+                    1.  Contact the contest’s coach
+                    <br>
+                    2.  Attend a few meetings to practice some skills
+                    <br>
+                    3.  Go to the competitions
+                    <br>
+                    <br>
+                    And that’s it!
+                </h3>
+            </div>
+            
+            <img id="easy-to-join-img" src="images/easy-to-join.png" style="float:right;position:relative; right:5%;z-index:-1;padding-top:5%;margin-left:5%;" width="60%">
         </div>
-        <img id="final-img" src="">
-        <h1 class="body-header">
-            So what are you waiting for?
-        </h1>
-        <a href="join-now.html"><button class="join-now">Join Now!</button></a>
+        <div class="join-container">
+            <img src="images/take-the-leap.jpg" height="100%;"width="100%;">
+            <div class="join-container-text">
+                <h1 class="body-header">
+                    So what are you waiting for?
+                </h1>
+                <a href="join-now.html"><button class="join-now">Join Now!</button></a>
+            </div>
+        </div>
+        
     </div>
 
     <div class="footer">
@@ -114,11 +142,12 @@
             Managed and Owned By _____
         </h6>
         <h6 class="text-footer">
-            <a href="contact.html">Contact</a>
-        </h6>
-        <h6 class="text-footer">
             <a href="index.html">Home</a>
         </h6>
+        <h6 class="text-footer">
+            <a href="contact.html">Contact</a>
+        </h6>
+        
         <h6 class="text-footer">
             <a href="https://www.uiltexas.org/academics">Official UIL Academics Link</a>
         </h6>
