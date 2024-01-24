@@ -68,6 +68,8 @@ Font Styling
 }
 
 .coach-name {
+  display: flex;
+  justify-content: center;
   font: var(--var-med-heading);
   color: var(--var-lightest);
   /* padding on .coin-base */
@@ -102,16 +104,13 @@ Classes
 */
 
 /* LAYOUT */
-
 .coaches {
   display: flex;
-  flex-direction: row;
-  max-width: fit-content;
+  flex-wrap: wrap;
 }
 
 .coach-card {
-  width: 100%;
-  max-width: 400px;
+  width: 25%;
   margin: 2em auto;
   background: rgb(247, 237, 113);
   background: rgb(238, 182, 86);
@@ -123,6 +122,7 @@ Classes
   border-radius: 15px;
   margin-bottom: 1rem;
   padding: 2rem;
+  box-shadow: .5em .5em #838383
 }
 
 div.flex-row {
@@ -150,18 +150,22 @@ div.flex-row {
 
 /* Details */
 
-img.eye {
-  position: absolute;
-  width: 100%;
-  max-width: 2em;
-  top: 44%;
-  left: 43%;
-}
 
 @media (min-width: 400px) {
   img.eye {
     max-width: 3em;
   }
+}
+
+.coach-card::before {
+  
+  width: 25%;
+  position: absolute;
+}
+
+.coach-card:hover {
+  transition: 1s ease-in-out;
+  transform: translate(10px, -10px);
 }
 
 .img-container::before {
@@ -205,3 +209,6 @@ div.attribution {
     font-size: 18px;
   }
 }
+
+/* Teacher Colors*/
+
