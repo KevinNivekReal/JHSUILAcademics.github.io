@@ -4,28 +4,189 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="coach-styles.css">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>
-        Coaches go here
+    <div class="header">
+        
+        <img class="logo" src="images/logo.png" height="50px" >
+        <ul>
+            <li class="text-header">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="text-header  contests-btn" onclick="openMenu()" >
+                Contests
+                <img class="carrot" id="carrot" src="images/dropdown-carrot.png" height="10px">
+            </li>
+            <li class="text-header">
+                <a href="coaches.html">Coaches</a>
+            </li>
+            <li class="text-header">
+                <a href="schedule.html">Schedule</a>
+            </li>
+            <input type="text" id="search">
+            <label for="search"><img class="search-button text-header" src="images/search-icon.png" height="24px">
+            </label>
+            <div class="navbar" id="navbar">
+                <div class="column">
+                    <h2 class="navbar-title">Math</h2>
+                    <p class="navbar-text"><a href="contests/accounting.html">Accounting</a></p>
+                    <p class="navbar-text"><a href="contests/calculator-applications.html">Calculator Applications</a></p>
+                    <p class="navbar-text"><a href="contests/mathematics.html">Mathematics</a></p>
+                    <p class="navbar-text"><a href="contests/number-sense.html">Number Sense</a></p>
+
+                    <h2 class="navbar-title">Reading</h2>
+                    <p class="navbar-text"><a href="contests/literary-criticism.html">Literary Criticism</a></p>
+                </div>
+                <div class="column">
+                    <h2 class="navbar-title">Writing</h2>
+                    <p class="navbar-text"><a href="contests/copy-editing.html">Copy Editing</a></p>
+                    <p class="navbar-text"><a href="contests/editorial-writing.html">Editorial Writing</a></p>
+                    <p class="navbar-text"><a href="contests/feature-writing.html">Feature Writing</a></p>
+                    <p class="navbar-text"><a href="contests/headline-writing.html">Headline Writing</a></p>
+                    <p class="navbar-text"><a href="contests/news-writing.html">News Writing</a></p>
+                    <p class="navbar-text"><a href="contests/ready-writing.html">ready Writing</a></p>
+                    <p class="navbar-text"><a href="contests/spelling.html">Spelling</a></p>                
+                </div>
+                <div class="column">
+                    <h2 class="navbar-title">Social Studies</h2>
+                    <p class="navbar-text"><a href="contests/current-issues.html">Current Issues & Events</a></p>
+                    <p class="navbar-text"><a href="contests/social-studies.html">Social Studies</a></p>
+                    
+                    <h2 class="navbar-title">Debate</h2>
+                    <p class="navbar-text"><a href="contests/speech-and-debate.html">Speech and Debate</a></p>
+                    
+                    <h2 class="navbar-title">Theater</h2>
+                    <p class="navbar-text"><a href="contests/one-act-play.html">one Act play</a></p>
+                </div>
+                <div class="column">
+                    <h2 class="navbar-title">Science</h2>
+                    <p class="navbar-text"><a href="contests/computer-programming.html">Computer programming</a></p>
+                    <p class="navbar-text"><a href="contests/computer-science-written-test.html">Computer Science Written Test</a></p>
+                    <p class="navbar-text"><a href="contests/robotics.html">robotics</a></p>
+                    <p class="navbar-text"><a href="contests/science.html">Science</a></p>                
+                </div>
+                
+            </div>
+        </ul>
+        
+        
+    </div>
+
+    <h1 class="title">
+        Coaches
     </h1>
 
     <!-- Coach profile skeleton -->
     <div class="coaches">
         <div class="coach-card">
             <div class="img-container">
-                <img src="images/nerd.jpg">
+                <img class="coach-pic" src="images/nerd.jpg">
             </div>
-            <h2>Coach Name</h2>
-            <h3>Coach Occupation</h3>
-            <ul>
-                <li>Class 1</li>
-                <li>Class 2</li>
-                <li>Class 3</li>
+            <h2 class="coach-name">Amanda Tremaine</h2>
+            <h3 class="coach-role">Coach Occupation</h3>
+            <ul class="classes">
+                <li>Speech</li>
+                <li>Debate</li>
+            </ul>
+        </div>
+
+        <div class="coach-card">
+            <div class="img-container">
+                <img class="coach-pic" src="images/nerd.jpg">
+            </div>
+            <h2 class="coach-name">Mrs. Staab</h2>
+            <h3 class="coach-role">Coach Occupation</h3>
+            <ul class="classes">
+                <li>Math</li>
+                <li>Number Sense</li>
+                <li>Calculator Applications</li>
+            </ul>
+        </div>
+
+        <div class="coach-card">
+            <div class="img-container">
+                <img class="coach-pic" src="images/nerd.jpg">
+            </div>
+            <h2 class="coach-name">Mrs. Sanderson</h2>
+            <h3 class="coach-role">Coach Occupation</h3>
+            <ul class="classes">
+                <li>Science (Biology, chemistry, Physics)</li>
+            </ul>
+        </div>
+
+        <div class="coach-card">
+            <div class="img-container">
+                <img class="coach-pic" src="images/nerd.jpg">
+            </div>
+            <h2 class="coach-name">Mr. John</h2>
+            <h3 class="coach-role">Coach Occupation</h3>
+            <ul class="classes">
+                <li>Current Issues and Events</li>
+                <li>Social Studies</li>
+            </ul>
+        </div>
+
+        <div class="coach-card">
+            <div class="img-container">
+                <img class="coach-pic" src="images/nerd.jpg">
+            </div>
+            <h2 class="coach-name">Mr. Bronaugh</h2>
+            <h3 class="coach-role">Coach Occupation</h3>
+            <ul class="classes">
+                <li>Robotics</li>
+            </ul>
+        </div>
+
+        <div class="coach-card">
+            <div class="img-container">
+                <img class="coach-pic" src="images/nerd.jpg">
+            </div>
+            <h2 class="coach-name">Ms. Flores</h2>
+            <h3 class="coach-role">Coach Occupation</h3>
+            <ul class="classes">
+                <li>One Act Play</li>
+            </ul>
+        </div>
+
+        <div class="coach-card">
+            <div class="img-container">
+                <img class="coach-pic" src="images/nerd.jpg">
+            </div>
+            <h2 class="coach-name">Mr. Robinson</h2>
+            <h3 class="coach-role">Coach Occupation</h3>
+            <ul class="classes">
+                <li>Computer Science</li>
+            </ul>
+        </div>
+
+        <div class="coach-card">
+            <div class="img-container">
+                <img class="coach-pic" src="images/nerd.jpg">
+            </div>
+            <h2 class="coach-name">Ms. Crowe</h2>
+            <h3 class="coach-role">Coach Occupation</h3>
+            <ul class="classes">
+                <li>Journalism</li>
+            </ul>
+        </div>
+
+        <div class="coach-card">
+            <div class="img-container">
+                <img class="coach-pic" src="images/nerd.jpg">
+            </div>
+            <h2 class="coach-name">Mrs. Treadway</h2>
+            <h3 class="coach-role">Coach Occupation</h3>
+            <ul class="classes">
+                <li>Accounting</li>
+                <li>Literary Criticism</li>
+                <li>Spelling and Vocaublary</li>
+                <li>Ready Writing</li>
             </ul>
         </div>
     </div>
     
+    <script src="script.js"></script>
 </body>
 </html>
