@@ -3,75 +3,221 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Accounting</title>
     <link rel="stylesheet" type="text/css" href="../style.css">
     <link rel="stylesheet" type="text/css" href="contests.css">
 </head>
-<body style="background-color:#f2f2f2">
+<body>
     <div class="header">
         
         <img class="logo" src="../images/logo.png" height="50px" >
         <ul>
+            
+            <li class="text-header">
+                <a href="index.html">Home</a>
+            </li>
             <li class="text-header  contests-btn" onclick="openMenu()" >
                 Contests
                 <img class="carrot" id="carrot" src="../images/dropdown-carrot.png" height="10px">
             </li>
             <li class="text-header">
-                <a href="../coaches.html">Coaches</a>
+                <a href="coaches.html">Coaches</a>
             </li>
             <li class="text-header">
-                <a href="../schedule.html">Schedule</a>
+                <a href="schedule.html">Schedule</a>
             </li>
-            <input type="text" id="search">
-            <label for="search"><img class="search-button text-header" src="../images/search-icon.png" height="24px">
-            </label>
+            
+                <input type="text" id="search" onfocusin="showSearch()" onfocusout="showSearch()" onkeyup="changed()">
+                <div class="search-container" id="search-container">
+                    <ul class="list-container">
+                        <a href="">
+                            <li class="item" id="accounting">
+                                Accounting
+                            </li>
+                        </a>
+                        <a href="">
+                            <li class="item" id="alyssa flores">
+                                Alyssa flores
+                            </li>
+                        </a>
+                        <a href="">
+                            <li class="item" id="amanda tremaine">
+                                Amanda tremaine
+                            </li>
+                        </a>
+                        <a href="">
+                            <li class="item" id="beki treadway">
+                                Beki treadway
+                            </li>
+                        </a>
+                        <a href="">
+                            <li class="item" id="bert bronaugh">
+                                Bert bronaugh
+                            </li>
+                        </a>
+                        <a href="">
+                            <li class="item" id="britney crowe">
+                                Britney crowe
+                            </li>
+                        </a>
+                        <a href="">
+                            <li class="item" id="calculator applications">
+                                Calculator applications
+                            </li>
+                        </a>
+                        <a href="">
+                            <li class="item" id="christine staab">
+                                Christine staab
+                            </li>
+                        </a>
+                        <a href="">
+                            <li class="item" id="computer programming">
+                                Computer programming
+                            </li>
+                        </a>
+                        <a href="">
+                            <li class="item" id="computer science written test">
+                                Computer science written test
+                            </li>
+                        </a>
+                        <a href="">
+                            <li class="item" id="copy editing">
+                                Copy editing
+                            </li>
+                        </a>
+                        <a href="">
+                            <li class="item" id="current issues and events">
+                                Current issues and events
+                            </li>
+                        </a>
+                        <a href="">
+                            <li class="item" id="debra sanderson">
+                                Debra sanderson
+                            </li>
+                        </a>
+                        <a href="">
+                            <li class="item" id="devon robinson">
+                                Devon robinson
+                            </li>
+                        </a>
+                        <a href="">
+                            <li class="item" id="editorial writing">
+                                Editorial writing
+                            </li>
+                        </a>
+                        <a href="">
+                            <li class="item" id="feature writing">
+                                Feature writing
+                            </li>
+                        </a>
+                        <a href="">
+                            <li class="item" id="headline writing">
+                                Headline writing
+                            </li>
+                        </a>
+                        <a href="">
+                            <li class="item" id="jude john">
+                                Jude john
+                            </li>
+                        </a>
+                        <a href="">
+                            <li class="item" id="literary criticism">
+                                Literary criticism
+                            </li>
+                        </a>
+                        <a href="">
+                            <li class="item" id="mathematics">
+                                Mathematics
+                            </li>
+                        </a>
+                        <a href="">
+                            <li class="item" id="news writing">
+                                News writing
+                            </li>
+                        </a>
+                        <a href="">
+                            <li class="item" id="number sense">
+                                Number sense
+                            </li>
+                        </a>
+                        <a href="">
+                            <li class="item" id="one act play">
+                                One act play
+                            </li>
+                        </a>
+                        <a href="">
+                            <li class="item" id="ready writing">
+                                Ready writing
+                            </li>
+                        </a>
+                        <a href="">
+                            <li class="item" id="robotics">
+                                Robotics
+                            </li>
+                        </a>
+                        <a href="">
+                            <li class="item" id="science">
+                                Science
+                            </li>
+                        </a>
+                        <a href="">
+                            <li class="item" id="social studies">
+                                Social studies
+                            </li>
+                        </a>
+                        <a href="">
+                            <li class="item" id="speech and debate">
+                                Speech and debate
+                            </li>
+                        </a>
+                        <a href="">
+                            <li class="item" id="spelling">
+                                Spelling
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <label for="search"><img class="search-button text-header" src="../images/search-icon.png" height="24px">
+                </label>
+            
             <div class="navbar" id="navbar">
                 <div class="column">
                     <h2 class="navbar-title">Math</h2>
-                    <p class="navbar-text"><a href="">Accounting</a></p>
-                    <p class="navbar-text"><a href="">Calculator Applications</a></p>
-                    <p class="navbar-text"><a href="">Computer Applications</a></p>
-                    <p class="navbar-text"><a href="">Mathematics</a></p>
-                    <p class="navbar-text"><a href="">Number Sense</a></p>
+                    <p class="navbar-text"><a href="../contests/accounting.html">Accounting</a></p>
+                    <p class="navbar-text"><a href="../contests/calculator-applications.html">Calculator Applications</a></p>
+                    <p class="navbar-text"><a href="../contests/mathematics.html">Mathematics</a></p>
+                    <p class="navbar-text"><a href="../contests/number-sense.html">Number Sense</a></p>
 
                     <h2 class="navbar-title">Reading</h2>
-                    <p class="navbar-text"><a href="">Literary Criticism</a></p>
-                    <p class="navbar-text"><a href="">poetry Interpretation</a></p>
-                    <p class="navbar-text"><a href="">prose interpretation</a></p>
+                    <p class="navbar-text"><a href="../contests/literary-criticism.html">Literary Criticism</a></p>
                 </div>
                 <div class="column">
                     <h2 class="navbar-title">Writing</h2>
-                    <p class="navbar-text"><a href="">Copy Editing</a></p>
-                    <p class="navbar-text"><a href="">Editorial Writing</a></p>
-                    <p class="navbar-text"><a href="">Feature Writing</a></p>
-                    <p class="navbar-text"><a href="">Healine Writing</a></p>
-                    <p class="navbar-text"><a href="">News Writing</a></p>
-                    <p class="navbar-text"><a href="">ready Writing</a></p>
-                    <p class="navbar-text"><a href="">Spelling</a></p>
-                    <p class="navbar-text"><a href="">Latino History Essay</a></p>
-                    <p class="navbar-text"><a href="">Barabara Jones Historical Essay</a></p>
+                    <p class="navbar-text"><a href="../contests/copy-editing.html">Copy Editing</a></p>
+                    <p class="navbar-text"><a href="../contests/editorial-writing.html">Editorial Writing</a></p>
+                    <p class="navbar-text"><a href="../contests/feature-writing.html">Feature Writing</a></p>
+                    <p class="navbar-text"><a href="../contests/headline-writing.html">Headline Writing</a></p>
+                    <p class="navbar-text"><a href="../contests/news-writing.html">News Writing</a></p>
+                    <p class="navbar-text"><a href="../contests/ready-writing.html">ready Writing</a></p>
+                    <p class="navbar-text"><a href="../contests/spelling.html">Spelling</a></p>                
                 </div>
                 <div class="column">
                     <h2 class="navbar-title">Social Studies</h2>
-                    <p class="navbar-text"><a href="">Current Issues & Events</a></p>
-                    <p class="navbar-text"><a href="">Social Studies</a></p>
-                    <p class="navbar-text"><a href="">Informative Speaking</a></p>
-
+                    <p class="navbar-text"><a href="../contests/current-issues.html">Current Issues & Events</a></p>
+                    <p class="navbar-text"><a href="../contests/social-studies.html">Social Studies</a></p>
+                    
                     <h2 class="navbar-title">Debate</h2>
-                    <p class="navbar-text"><a href="">Cross-Examination</a></p>
-                    <p class="navbar-text"><a href="">Congress</a></p>
-                    <p class="navbar-text"><a href="">Lincoln Douglass</a></p>
+                    <p class="navbar-text"><a href="../contests/speech-and-debate.html">Speech and Debate</a></p>
+                    
+                    <h2 class="navbar-title">Theater</h2>
+                    <p class="navbar-text"><a href="../contests/one-act-play.html">one Act play</a></p>
                 </div>
                 <div class="column">
                     <h2 class="navbar-title">Science</h2>
-                    <p class="navbar-text"><a href="">Computer programming</a></p>
-                    <p class="navbar-text"><a href="">Computer Science Written Test</a></p>
-                    <p class="navbar-text"><a href="">robotics</a></p>
-                    <p class="navbar-text"><a href="">Science</a></p>
-
-                    <h2 class="navbar-title">Theater</h2>
-                    <p class="navbar-text"><a href="">one Act play</a></p>
-                    <p class="navbar-text"><a href="">Theatrical Design</a></p>
+                    <p class="navbar-text"><a href="../contests/computer-programming.html">Computer programming</a></p>
+                    <p class="navbar-text"><a href="../contests/computer-science-written-test.html">Computer Science Written Test</a></p>
+                    <p class="navbar-text"><a href="../contests/robotics.html">robotics</a></p>
+                    <p class="navbar-text"><a href="../contests/science.html">Science</a></p>                
                 </div>
                 
             </div>
@@ -86,7 +232,7 @@
                 <h1 class="section-header">
                     Accounting
                 </h1>
-                <img class="contest-image" src="">
+                <img class="contest-image" src="../images/accounting-image.jpg">
             </div>
             <div class="summary-column">
                 <div class="summary-box">
@@ -115,6 +261,16 @@
                 </div>
             </div>
         </div>
+        <div class="applications-box"> <!-- uses the same class as the applications box, but its the overview section-->
+            <h1 class="section-header">
+                Official UIL Overview
+            </h1>
+            <div class="description-box">
+                <h2 class="applications-description">
+                    The contest focuses on the elementary principles and practices of accounting for sole proprietorship, partnerships and corporations, and includes bookkeeping terminology, the work sheet with adjustments, income statement, balance sheet, trial balance, account classification, journalizing, posting, bank reconciliation, payroll and other items related to the basic accounting cycle.
+                </h2>
+            </div>
+        </div>
         <div class="resources-box">
                 <h1 class="section-header">
                     Resources
@@ -122,13 +278,36 @@
             
             <div class="resources-wrapper">
                 <div class="resources-column">
-                    
+                    <a target="_blank" href="http://www.funderburkcpa.com/uil/exams">
+                        <img src="https://i.ibb.co/cXX79zW/accounting-archived-exams.png" alt="accounting-archived-exams" border="0">
+                    </a>
+                    <h3 class="resources-title">Accounting Archived Exams</h3>
                 </div>
                 <div class="resources-column">
-                    
+                    <a target="_blank" href="https://www.uiltexas.org/files/academics/Funderburk_Accounting_Basics.pdf#page=7">
+                        <img src="https://i.ibb.co/6DWH3T2/accounting-basics.png" alt="accounting-basics" border="0">
+                    </a>
+                    <h3 class="resources-title">Accounting Basics</h3>
                 </div>
                 <div class="resources-column">
-                    
+                    <a target="_blank" href="https://www.uiltexas.org/files/academics/Accounting-Sample-Lessons.pdf">
+                        <img src="https://i.ibb.co/ZcpmPSh/accounting-lesson-plan.png" alt="accounting-lesson-plan" border="0">
+                    </a>
+                    <h3 class="resources-title">Accounting Lesson Plan</h3>
+                </div>
+                <div class="resources-column">
+                    <a target="_blank" href="https://www.accountingworkbook.com">
+                        <img src="https://i.ibb.co/VNZTzND/accounting-workbook.png" alt="accounting-workbook" border="0">
+                    </a>
+                    <h3 class="resources-title">Learning Accounting</h3>
+                </div>
+                <div class="resources-column">
+                    <iframe src="https://cdn.iframe.ly/api/iframe?app=1&amp;url=https%3A%2F%2Fwww.youtube.com%2F%40AccountingStuff&amp;key=462812a26b593f2dbfbfcbb14f6d699a" style="width:300px;border:0"></iframe>
+                    <h3 class="resources-title">Accounting Videos</h3>
+                </div>
+                <div class="resources-column">
+                    <iframe src="https://cdn.iframe.ly/api/iframe?app=1&amp;url=https%3A%2F%2Fwww.youtube.com%2F%40Tony-Bell&amp;key=462812a26b593f2dbfbfcbb14f6d699a" style="width:300px;border:0"></iframe>
+                    <h3 class="resources-title">Accounting Videos</h3>
                 </div>
             </div>
             
@@ -139,7 +318,7 @@
             </h1>
             <div class="description-box">
                 <h2 class="applications-description">
-                    Accounting is a skill that is incredibly useful as an adult. Money management will become one of your top priorities and this contest will teach you how to properly manage your money and real-world instances of money accounting.
+                    Accounting is a skill that is incredibly useful as an adult. Money management will become one of your top priorities and this contest will teach you how to properly manage your money and provide you with real-world experience in the world of accounting.
                 </h2>
             </div>
             
