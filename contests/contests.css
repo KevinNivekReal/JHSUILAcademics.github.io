@@ -8,16 +8,29 @@
     src: url("../garet-font/Garet-Book.otf");
 }
 
+body {
+    background-color: #FFFAEB;
+}
+
 /* For the summary section */
 .summary-section {
     height:500px;
     width:100%;
     display:flex;
-    margin-top:10px;
+    margin-top:5%;
 }
 
 .name-column,.summary-column {
     width:50%;
+}
+
+.name-column{
+    text-align:center;
+}
+
+.contest-image {
+    padding-top:20px;
+    height:400px;
 }
 
 .section-header { /* this style goes for all the section headers */
@@ -31,15 +44,16 @@
     width:50%;
     height:100px;
     margin:25px;
+    margin-top: 40px;
     padding:10px;
-    border: 5px solid black;
+    border: 3px solid black;
     position:relative;
     left:25%;
 }
 
 .summary-title {
     font-family: "kollektif", sans-serif;
-    font-size:1.5em;
+    font-size:1.7em;
     font-weight:900;
     text-align:center;
 }
@@ -47,7 +61,7 @@
 .summary-description {
     font-family: "garet", sans-serif;
     font-weight:900;
-    font-size:1em;
+    font-size:1.2em;
     text-align:center;
 }
 
@@ -55,6 +69,7 @@
 .resources-box {
     height:750px;
     width:100%;
+    margin-top:10%;
 }
 
 .resources-box h1 {
@@ -63,21 +78,33 @@
 }
 .resources-wrapper {
     display:flex;
+    flex-wrap: wrap;
     width:100%;
     justify-content: space-around;
-    height:95%;
+
 }
 
 .resources-column {
-    width:25%;
-    height:90%;
-    border:5px solid black;
+    width:300px;
+    border:3px solid black;
 }
 
+.resources-column img {
+    width:300px;
+}
+
+.resources-title {
+    text-align:center;
+    font-family: "garet", sans-serif;
+}
+
+iframe {
+    margin-top:45%;
+}
 /* for the applications section */
 .applications-box {
     width:100%;
-    margin-top:100px;
+    margin-top:10%;;
     height:400px;
 }
 
@@ -94,3 +121,4 @@
     font-size: 1.5em;
     text-align:center;
 }
+
