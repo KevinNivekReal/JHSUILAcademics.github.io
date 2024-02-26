@@ -68,11 +68,14 @@ Font Styling
 }
 
 .coach-name {
-  display: flex;
-  justify-content: center;
+  text-align: center;
+  border: 5px solid black;
+  border-radius: 30px;
+  padding: 2%;
+  margin-top: 0;
   font: var(--var-med-heading);
-  color: var(--var-lightest);
-  /* padding on .coin-base */
+  color: black;
+  background-color:#f2f2f2;
 }
 
 .coach-role {
@@ -84,8 +87,11 @@ Font Styling
 }
 
 .classes {
+  padding: 0%;
   font: var(--var-para);
   color: var(--var-line-dark);
+  list-style-type: none;
+  text-align: center;
 }
 
 .coach-pic {
@@ -107,11 +113,14 @@ Classes
 .coaches {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .coach-card {
-  width: 25%;
-  margin: 2em auto;
+  width: 15em;
+  height: 25em;
+  margin: 2em ;
   background: rgb(247, 237, 113);
   background: rgb(238, 182, 86);
   background: linear-gradient(
