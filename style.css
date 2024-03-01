@@ -140,6 +140,11 @@ body {
     background-color: #ebedeb;
 }
 
+.search-label {
+    width: 45px;
+    margin-right:150px;
+}
+
 .body-container {
 
     padding-bottom:10%;   
@@ -304,7 +309,7 @@ body {
     background-color: white;
 
     position: absolute;
-    right:8rem;
+    right:12.5rem;
     top: 77px;
     z-index:200;
     display:none;
