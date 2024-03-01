@@ -14,20 +14,20 @@
         <ul>
             
             <li class="text-header">
-                <a href="index.html">Home</a>
+                <a href="../index.html">Home</a>
             </li>
             <li class="text-header  contests-btn" onclick="openMenu()" >
                 Contests
                 <img class="carrot" id="carrot" src="../images/dropdown-carrot.png" height="10px">
             </li>
             <li class="text-header">
-                <a href="coaches.html">Coaches</a>
+                <a href="../coaches.html">Coaches</a>
             </li>
             <li class="text-header">
-                <a href="schedule.html">Schedule</a>
+                <a href="../schedule.html">Schedule</a>
             </li>
             
-                <input type="text" id="search" onfocusin="showSearch()" onfocusout="showSearch()" onkeyup="changed()">
+                <input type="text" id="search" onfocusin="showSearch()" onfocusout="showSearch()" onkeyup="changed()" >
                 <div class="search-container" id="search-container">
                     <ul class="list-container">
                         <a href="">
@@ -177,7 +177,7 @@
                         </a>
                     </ul>
                 </div>
-                <label for="search"><img class="search-button text-header" src="../images/search-icon.png" height="24px">
+                <label class="search-label"for="search"><img class="search-button text-header" src="../images/search-icon.png" height="24px">
                 </label>
             
             <div class="navbar" id="navbar">
@@ -271,6 +271,7 @@
                 </h2>
             </div>
         </div>
+        <hr class="hor-separator">
         <div class="resources-box">
                 <h1 class="section-header">
                     Resources
@@ -306,13 +307,15 @@
                     <h3 class="resources-title">Accounting Videos</h3>
                 </div>
                 <div class="resources-column">
-                    <iframe src="https://cdn.iframe.ly/api/iframe?app=1&amp;url=https%3A%2F%2Fwww.youtube.com%2F%40Tony-Bell&amp;key=462812a26b593f2dbfbfcbb14f6d699a" style="width:300px;border:0"></iframe>
+                    <iframe src="https://cdn.iframe.ly/api/iframe?app=1&amp;url=https%3A%2F%2Fwww.youtube.com%2F%40Tony-Bell&amp;key=462812a26b593f2dbfbfcbb14f6d699a" style="width:300px;border:0">
+                    </iframe>
                     <h3 class="resources-title">Accounting Videos</h3>
                 </div>
             </div>
             
         </div>
-        <div class="applications-box">
+        <hr class="hor-separator">
+        <div class="applications-box" style="margin-top: 5%; margin-bottom: 10%">
             <h1 class="section-header">
                 Applications
             </h1>
