@@ -1,0 +1,136 @@
+@font-face {
+    font-family: "kollektif";
+    src: url("/kollektif-font/Kollektif.ttf");
+}
+
+@font-face {
+    font-family: "garet";
+    src: url("/garet-font/Garet-Book.otf");
+}
+
+body {
+    background-color: #FFFAEB;
+}
+
+.hor-separator {
+    width: 30%;
+    position: relative;
+    border: 3px solid black;
+}
+
+.schedule-wrapper {
+    width:100%;
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 10%;
+}
+
+.schedule-half {
+    width:50%;
+    text-align: center;
+}
+
+.conflict-pattern-img {
+    width:60%;
+}
+
+.schedule-title {
+    font-family: "kollektif";
+    font-weight: 900;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.event {
+    width:75%;
+    text-align: center;
+    position: relative;
+    left: 12.5%;
+}
+
+
+
+.event-title {
+    width:100%;
+    border: 2px dashed black;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    font-family: "garet";
+    font-weight: 900;
+    border-radius: 15px;
+}
+
+.event-title:hover {
+    cursor: pointer;
+}
+.part-wrapper {
+    display:none;
+}
+
+.part {
+    background-color: #f2f2f2;
+    width:90%;
+    border: 2px dashed black;
+    position: relative;
+    left: 5%;
+    border-radius: 15px;
+    display: block;
+    margin-top: 2px;
+}
+
+.event-text {
+    font-family: "garet";
+    font-weight:bold;
+}
+
+.schedule-meeting-wrapper {
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 25%;
+}
+
+.week-wrapper {
+    display: flex;
+    justify-content: space-around;
+    font-family: "garet",sans-serif;
+    font-weight: 999;
+    text-align: center;
+}
+
+.day {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.day-separator {
+    border: 2px solid black;
+    width: 100%;
+    padding: 0;
+    margin:0;
+    position: relative;
+}
+
+.day-separator:before {
+    content:"";
+    position: absolute;
+    left:-6px;
+    top: -7px;
+    height:10px;
+    border: 2px solid black;
+}
+
+.day-separator:after {
+    content:"";
+    position: absolute;
+    right:-6px;
+    top: -7px;
+    height:10px;
+    border: 2px solid black;
+}
+
+.schedule-contest {
+    margin-top: 50px;
+    font-size: 1.2em;
+}
