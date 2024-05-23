@@ -12,6 +12,12 @@ body {
     background-color: #FFFAEB;
 }
 
+.hor-separator {
+    width: 30%;
+    position: relative;
+    border: 3px solid black;
+}
+
 /* For the summary section */
 .summary-section {
     height:500px;
@@ -67,10 +73,13 @@ body {
 
 /* for the resources section */
 .resources-box {
-    height:750px;
+
     width:100%;
-    margin-top:10%;
+    margin-top:5%;
+    margin-bottom:5%;
+
 }
+
 
 .resources-box h1 {
     margin-top:70px;
@@ -79,18 +88,32 @@ body {
 .resources-wrapper {
     display:flex;
     flex-wrap: wrap;
-    width:100%;
-    justify-content: space-around;
-
+    width:90%;
+    left: 5%;
+    position:relative;
+    justify-content: center;
 }
 
 .resources-column {
     width:300px;
-    border:3px solid black;
+    border:5px solid black;
+    border-radius: 20px;
+    background-color: white;
+    padding: 10px;
+    margin: 5px 30px 30px 30px;
+}
+
+.resources-column:hover {
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,.2);
+    border-color: gray;
 }
 
 .resources-column img {
     width:300px;
+}
+
+.notratio {
+    margin-top: 30%;
 }
 
 .resources-title {
@@ -100,12 +123,13 @@ body {
 
 iframe {
     margin-top:45%;
+    width:300px;
+    border:0;
 }
 /* for the applications section */
 .applications-box {
     width:100%;
-    margin-top:10%;;
-    height:400px;
+    margin-top:10%;
 }
 
 .description-box {
@@ -113,6 +137,7 @@ iframe {
     position:relative;
     left:20%;
     height:50%;
+    margin-bottom: 5%;
 }
 
 .applications-description {
@@ -122,3 +147,36 @@ iframe {
     text-align:center;
 }
 
+@media (max-width:1015px) {
+    .summary-section {
+        height:1000px;
+        display: block;
+    }
+    .section-header {
+        font-size: 2em;
+    }
+    .name-column {
+
+        width: 100%;
+    }
+    .summary-column {
+        position: relative;
+        left: -8%;
+        width: 100%;
+    }
+    .contest-image {
+        height:300px;
+    }
+    .summary-title {
+        font-size: 1.4em;
+    }
+    .summary-description{
+        font-size: 0.8em;
+    }
+    .applications-description{
+        font-size: 1em;
+    }
+    .resources-column,.resources-column img, iframe {
+        width: 200px;
+    }
+}
