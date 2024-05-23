@@ -7,80 +7,281 @@
     <link rel="stylesheet" type="text/css" href="../style.css">
     <link rel="stylesheet" type="text/css" href="contests.css">
 </head>
-<body style="background-color:#f2f2f2">
-    <div class="header">
+<body>
+    <div class="header" id="header">
         
-        <img class="logo" src="../images/logo.png" height="50px" >
-        <ul>
+        <a href="../index.html"><img class="logo" src="../images/logo.png"></a>
+        <ul class="main-nav">
+            
             <li class="text-header">
-                <a href="../index.html">Home</a>
+                <a href="index.html">Home</a>
             </li>
             <li class="text-header  contests-btn" onclick="openMenu()" >
                 Contests
                 <img class="carrot" id="carrot" src="../images/dropdown-carrot.png" height="10px">
             </li>
             <li class="text-header">
-                <a href="../coaches.html">Coaches</a>
+                <a href="coaches.html">Coaches</a>
             </li>
             <li class="text-header">
                 <a href="../schedule.html">Schedule</a>
             </li>
-            <input type="text" id="search">
-            <label for="search"><img class="search-button text-header" src="../images/search-icon.png" height="24px">
-            </label>
+            
+                <input type="text" id="search" onfocusin="showSearch()" onfocusout="showSearch()" onkeyup="changed()">
+                <div class="search-container" id="search-container">
+                    <ul class="list-container">
+                        <a href="accounting.html">
+                            <li class="item" id="accounting">
+                                Accounting
+                            </li>
+                        </a>
+                        <a href="../coaches.html#flores">
+                            <li class="item" id="alyssa flores">
+                                Alyssa flores
+                            </li>
+                        </a>
+                        <a href="../coaches.html#tremaine">
+                            <li class="item" id="amanda tremaine">
+                                Amanda tremaine
+                            </li>
+                        </a>
+                        <a href="../coaches.html#treadway">
+                            <li class="item" id="beki treadway">
+                                Beki treadway
+                            </li>
+                        </a>
+                        <a href="../coaches.html#bronaugh">
+                            <li class="item" id="bert bronaugh">
+                                Bert bronaugh
+                            </li>
+                        </a>
+                        <a href="../coaches.html#crowe">
+                            <li class="item" id="britney crowe">
+                                Britney crowe
+                            </li>
+                        </a>
+                        <a href="calculator-applications.html">
+                            <li class="item" id="calculator applications">
+                                Calculator applications
+                            </li>
+                        </a>
+                        <a href="../coaches.html#staab">
+                            <li class="item" id="christine staab">
+                                Christine staab
+                            </li>
+                        </a>
+                        <a href="computer-science.html">
+                            <li class="item" id="computer science">
+                                Computer science
+                            </li>
+                        </a>
+                        <a href="copy-editing.html">
+                            <li class="item" id="copy editing">
+                                Copy editing
+                            </li>
+                        </a>
+                        <a href="current-issues.html">
+                            <li class="item" id="current issues and events">
+                                Current issues and events
+                            </li>
+                        </a>
+                        <a href="../coaches.html#sanderson">
+                            <li class="item" id="debra sanderson">
+                                Debra sanderson
+                            </li>
+                        </a>
+                        <a href="../coaches.html#robinson">
+                            <li class="item" id="devon robinson">
+                                Devon robinson
+                            </li>
+                        </a>
+                        <a href="editorial-writing.html">
+                            <li class="item" id="editorial writing">
+                                Editorial writing
+                            </li>
+                        </a>
+                        <a href="feature-writing.html">
+                            <li class="item" id="feature writing">
+                                Feature writing
+                            </li>
+                        </a>
+                        <a href="headline-writing.html">
+                            <li class="item" id="headline writing">
+                                Headline writing
+                            </li>
+                        </a>
+                        <a href="../coaches.html#john">
+                            <li class="item" id="jude john">
+                                Jude john
+                            </li>
+                        </a>
+                        <a href="literary-criticism.html">
+                            <li class="item" id="literary criticism">
+                                Literary criticism
+                            </li>
+                        </a>
+                        <a href="mathematics.html">
+                            <li class="item" id="mathematics">
+                                Mathematics
+                            </li>
+                        </a>
+                        <a href="news-writing.html">
+                            <li class="item" id="news writing">
+                                News writing
+                            </li>
+                        </a>
+                        <a href="number-sense.html">
+                            <li class="item" id="number sense">
+                                Number sense
+                            </li>
+                        </a>
+                        <a href="one-act-play.html">
+                            <li class="item" id="one act play">
+                                One act play
+                            </li>
+                        </a>
+                        <a href="ready-writing.html">
+                            <li class="item" id="ready writing">
+                                Ready writing
+                            </li>
+                        </a>
+                        <a href="robotics.html">
+                            <li class="item" id="robotics">
+                                Robotics
+                            </li>
+                        </a>
+                        <a href="science.html">
+                            <li class="item" id="science">
+                                Science
+                            </li>
+                        </a>
+                        <a href="social-studies.html">
+                            <li class="item" id="social studies">
+                                Social studies
+                            </li>
+                        </a>
+                        <a href="speech-and-debate.html">
+                            <li class="item" id="speech and debate">
+                                Speech and debate
+                            </li>
+                        </a>
+                        <a href="spelling.html">
+                            <li class="item" id="spelling">
+                                Spelling
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <label for="search"><img class="search-button text-header" src="../images/search-icon.png" height="24px">
+                </label>
+            
             <div class="navbar" id="navbar">
                 <div class="column">
                     <h2 class="navbar-title">Math</h2>
-                    <p class="navbar-text"><a href="accounting.html">Accounting</a></p>
-                    <p class="navbar-text"><a href="calculator-applications.html">Calculator Applications</a></p>
-                    <p class="navbar-text"><a href="mathematics.html">Mathematics</a></p>
-                    <p class="navbar-text"><a href="number-sense.html">Number Sense</a></p>
+                    <p class="navbar-text"><a href="contests/accounting.html">Accounting</a></p>
+                    <p class="navbar-text"><a href="contests/calculator-applications.html">Calculator Applications</a></p>
+                    <p class="navbar-text"><a href="contests/mathematics.html">Mathematics</a></p>
+                    <p class="navbar-text"><a href="contests/number-sense.html">Number Sense</a></p>
 
                     <h2 class="navbar-title">Reading</h2>
-                    <p class="navbar-text"><a href="literary-criticism.html">Literary Criticism</a></p>
+                    <p class="navbar-text"><a href="contests/literary-criticism.html">Literary Criticism</a></p>
                 </div>
                 <div class="column">
                     <h2 class="navbar-title">Writing</h2>
-                    <p class="navbar-text"><a href="copy-editing.html">Copy Editing</a></p>
-                    <p class="navbar-text"><a href="editorial-writing.html">Editorial Writing</a></p>
-                    <p class="navbar-text"><a href="feature-writing.html">Feature Writing</a></p>
-                    <p class="navbar-text"><a href="headline-writing.html">Headline Writing</a></p>
-                    <p class="navbar-text"><a href="news-writing.html">News Writing</a></p>
-                    <p class="navbar-text"><a href="ready-writing.html">ready Writing</a></p>
-                    <p class="navbar-text"><a href="spelling.html">Spelling</a></p>                
+                    <p class="navbar-text"><a href="contests/copy-editing.html">Copy Editing</a></p>
+                    <p class="navbar-text"><a href="contests/editorial-writing.html">Editorial Writing</a></p>
+                    <p class="navbar-text"><a href="contests/feature-writing.html">Feature Writing</a></p>
+                    <p class="navbar-text"><a href="contests/headline-writing.html">Headline Writing</a></p>
+                    <p class="navbar-text"><a href="contests/news-writing.html">News Writing</a></p>
+                    <p class="navbar-text"><a href="contests/ready-writing.html">ready Writing</a></p>
+                    <p class="navbar-text"><a href="contests/spelling.html">Spelling</a></p>                
                 </div>
                 <div class="column">
                     <h2 class="navbar-title">Social Studies</h2>
-                    <p class="navbar-text"><a href="current-issues.html">Current Issues & Events</a></p>
-                    <p class="navbar-text"><a href="social-studies.html">Social Studies</a></p>
+                    <p class="navbar-text"><a href="contests/current-issues.html">Current Issues & Events</a></p>
+                    <p class="navbar-text"><a href="contests/social-studies.html">Social Studies</a></p>
                     
                     <h2 class="navbar-title">Debate</h2>
-                    <p class="navbar-text"><a href="speech-and-debate.html">Speech and Debate</a></p>
+                    <p class="navbar-text"><a href="contests/speech-and-debate.html">Speech and Debate</a></p>
                     
                     <h2 class="navbar-title">Theater</h2>
-                    <p class="navbar-text"><a href="one-act-play.html">one Act play</a></p>
+                    <p class="navbar-text"><a href="contests/one-act-play.html">one Act play</a></p>
                 </div>
                 <div class="column">
                     <h2 class="navbar-title">Science</h2>
-                    <p class="navbar-text"><a href="computer-programming.html">Computer programming</a></p>
-                    <p class="navbar-text"><a href="computer-science-written-test.html">Computer Science Written Test</a></p>
-                    <p class="navbar-text"><a href="robotics.html">robotics</a></p>
-                    <p class="navbar-text"><a href="science.html">Science</a></p>                
+                    <p class="navbar-text"><a href="contests/computer-science.html">Computer Science</a></p>
+                    <p class="navbar-text"><a href="contests/robotics.html">robotics</a></p>
+                    <p class="navbar-text"><a href="contests/science.html">Science</a></p>                
                 </div>
                 
             </div>
         </ul>
-        
-        
+        <img class="burger-icon" id="burger-icon" onclick="changeBurger()" src="../images/burger-bar.svg" height="35px">
+        <img class="burger-x" id="burger-x" onclick="changeBurger()" src="../images/burger-x.svg" width="20px">
     </div>
 
-    <div class="body">
+    <div class="mobile-menu-nav" id="mobile-menu-nav">
+        <div class="mobile-menu-nav-option">
+            <h1 class="mobile-nav-option-title" onclick="openEvent(1)">Contests <img class="carrot"src="../images/dropdown-carrot.png" height="10px"></h1>
+
+            <div class="mobile-contests" id="mobile-contests">
+                
+                <h2 class="mobile-contests-title">Math</h2>
+                <p class="mobile-contests-text"><a href="accounting.html">Accounting</a></p>
+                <p class="mobile-contests-text"><a href="calculator-applications.html">Calculator Applications</a></p>
+                <p class="mobile-contests-text"><a href="mathematics.html">Mathematics</a></p>
+                <p class="mobile-contests-text"><a href="number-sense.html">Number Sense</a></p>
+
+                    <h2 class="mobile-contests-title">Reading</h2>
+                    <p class="mobile-contests-text"><a href="literary-criticism.html">Literary Criticism</a></p>
+                
+                
+                    <h2 class="mobile-contests-title">Writing</h2>
+                    <p class="mobile-contests-text"><a href="copy-editing.html">Copy Editing</a></p>
+                    <p class="mobile-contests-text"><a href="editorial-writing.html">Editorial Writing</a></p>
+                    <p class="mobile-contests-text"><a href="feature-writing.html">Feature Writing</a></p>
+                    <p class="mobile-contests-text"><a href="headline-writing.html">Headline Writing</a></p>
+                    <p class="mobile-contests-text"><a href="news-writing.html">News Writing</a></p>
+                    <p class="mobile-contests-text"><a href="ready-writing.html">ready Writing</a></p>
+                    <p class="mobile-contests-text"><a href="spelling.html">Spelling</a></p>                
+                
+                    <h2 class="mobile-contests-title">Social Studies</h2>
+                    <p class="mobile-contests-text"><a href="current-issues.html">Current Issues & Events</a></p>
+                    <p class="mobile-contests-text"><a href="social-studies.html">Social Studies</a></p>
+                    
+                    <h2 class="mobile-contests-title">Debate</h2>
+                    <p class="mobile-contests-text"><a href="speech-and-debate.html">Speech and Debate</a></p>
+                    
+                    <h2 class="mobile-contests-title">Theater</h2>
+                    <p class="mobile-contests-text"><a href="one-act-play.html">one Act play</a></p>
+                
+                    <h2 class="mobile-contests-title">Science</h2>
+                    <p class="mobile-contests-text"><a href="computer-science.html">Computer Science</a></p>
+                    <p class="mobile-contests-text"><a href="robotics.html">robotics</a></p>
+                    <p class="mobile-contests-text"><a href="science.html">Science</a></p>
+            </div>
+        </div>
+        <hr class="mobile-menu-separator">
+        <a class="mobile-link" href="../coaches.html">
+            <div class="mobile-menu-nav-option">
+                <h1 class="mobile-nav-option-title">Coaches</h1>
+            </div>
+        </a>
+        <hr class="mobile-menu-separator">
+        <a class="mobile-link" href="../schedule.html">
+            <div class="mobile-menu-nav-option">
+                <h1 class="mobile-nav-option-title">Schedule</h1>
+            </div>
+        </a>
+    </div>
+
+    <div class="body" id="body">
         <div class="summary-section">
             <div class="name-column">
                 <h1 class="section-header">
                     Speech and Debate
                 </h1>
-                <img class="contest-image" src="">
+                <img class="contest-image" src="../images/speech-and-debate-image.png">
             </div>
             <div class="summary-column">
                 <div class="summary-box">
@@ -96,7 +297,7 @@
                         Meeting Schedule
                     </h1>
                     <h3 class="summary-description">
-                        Every Tuesday or smth idk
+                        TBD
                     </h3>
                 </div>
                 <div class="summary-box">
@@ -104,7 +305,7 @@
                         Room Number
                     </h1>
                     <h3 class="summary-description">
-                        A number
+                        TBD
                     </h3>
                 </div>
             </div>
@@ -115,10 +316,32 @@
             </h1>
             <div class="description-box">
                 <h2 class="applications-description">
-                    There is none, so sorry to disappoint.
+                    <i>For Congress: </i>Within this mock legislative assembly, the students draft legislation, research bills and resolutions dealing with real-world social and political policies, deliver speeches and vote to pass or defeat the measures they have examined. Parliamentary Procedure forms structure for the discourse.
+                    <br>
+                    <br>
+                    <i>For Cross Examination: </i>As part of a two-person team, you will prepare your stance on a particular policy in advance and then face an opposing team in competition. You’ll have to think on your feet to defend your ideas. Cross-Examination Debate trains students to analyze a problem, conduct thorough and relevant research, and utilize principles of argumentation and advocacy in presenting the most effective case for or against a given proposition. Debate provides invaluable training in critical thinking, quick responses, defending worthy ideas and attacking invalid ideas. It teaches students to tolerate other points of view. Debate exists only in democratic societies, and no democratic society can exist without debate.
+                    <br>
+                    <br>
+                    <i>For Extemporaneous Speaking: </i>The purpose of this contest is to stimulate an active interest in current affairs at the
+                    state, national and international levels, and to teach the student to present extemporaneously in a clear
+                    and impartial manner the facts about a subject as they appear in the best available sources of information. This contest is an exercise in clear thinking and informing the public on the issues and concerns of
+                    the American people. The objective is to present information orally in an interesting way, and
+                    an attempt should not be made to change the listener’s mind beyond presenting the information
+                    <br>
+                    <br>
+                    <i>For Lincoln Douglas Debate: </i>Lincoln-Douglas debate provides excellent training for development of skills in argumentation, persuasion, research and audience analysis. Students are encouraged to develop a direct and communicative style of delivery. It is a one-on-one argumentation in which debaters attempt to convince the judge of the acceptability of their side of a proposition. In a given round, one debater will argue the affirmative side of the resolution and the other will argue the negative.
+                    <br>
+                    <br>
+                    <i>For Poetry Interpretation: </i>This contest emphasizes literary analysis through expressive oral reading. The purpose of this contest is to encourage the student to understand, experience and share poetry through the art of oral interpretation. The goals of this contest are to encourage the contestant’s exploration of a variety of literary selections, and to enhance the performer’s and audience’s appreciation of literature through the performer’s interpretation of the work.
+                    <br>
+                    <br>
+                    <i>For Prose Interpretation: </i>This contest encourages the student to understand, experience and share prose works through the art of oral interpretation. It encourages the contestant’s exploration of a variety of literary selections and enhances the performer’s and audience’s appreciation of literature through the performer’s interpretation of the work.
                 </h2>
             </div>
         </div>
+
+        <hr class="hor-separator">
+
         <div class="resources-box">
                 <h1 class="section-header">
                     Resources
@@ -126,17 +349,99 @@
             
             <div class="resources-wrapper">
                 <div class="resources-column">
-                    
+                    <a target="_blank" href="https://www.uiltexas.org/speech">
+                        <img class="notratio" src="https://i.ibb.co/CPBhHnz/debate-overview.png" alt="debate-overview" border="0">
+                    </a>
+                    <h3 class="resources-title">Speech and Debate Offical UIL Website</h3>
                 </div>
                 <div class="resources-column">
-                    
+                    <h3 class="resources-title" style="margin-top:55%">Join the JHS Debate class!</h3>
                 </div>
                 <div class="resources-column">
-                    
+                    <a target="_blank" href="https://www.uiltexas.org/files/academics/CongressManual23_24_PrintV3.pdf">
+                        <img src="https://i.ibb.co/C6FF8HB/debate-congresshandbook.png" alt="debate-congresshandbook" border="0">
+                    </a>
+                    <h3 class="resources-title">Congress Handbook</h3>
+                </div>
+                <div class="resources-column">
+                    <a target="_blank" href="https://www.uiltexas.org/speech/congress">
+                        <img src="https://i.ibb.co/8Nq178n/debate-congress-officialpage.png" alt="debate-congress-officialpage" border="0">
+                    </a>
+                    <h3 class="resources-title">Congress Official UIL Website</h3>
+                </div>
+                <div class="resources-column">
+                    <iframe src="https://cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3De8yChkfD8gQ&amp;key=462812a26b593f2dbfbfcbb14f6d699a">
+                    </iframe>
+                    <h3 class="resources-title">
+                        Congress Introduction Video
+                    </h3>
+                </div>
+                <div class="resources-column">
+                    <a target="_blank" href="https://www.uiltexas.org/files/academics/CXhandbook_23_24_Print.pdf">
+                        <img src="https://i.ibb.co/LJLfkvJ/debate-cxhandbook.png" alt="debate-cxhandbook" border="0">
+                    </a>
+                    <h3 class="resources-title">Cross Examination Handbook</h3>
+                </div>
+                <div class="resources-column">
+                    <iframe src="https://cdn.iframe.ly/api/iframe?app=1&amp;url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DWyYDXyb7dSU&amp;key=462812a26b593f2dbfbfcbb14f6d699a">
+                    </iframe>
+                    <h3 class="resources-title">
+                        Cross Examination Introduction Video
+                    </h3>
+                </div>
+
+                <div class="resources-column">
+                    <a target="_blank" href="https://www.uiltexas.org/files/academics/CXhandbook_23_24_Print.pdf">
+                        <img src="https://i.ibb.co/LJLfkvJ/debate-cxhandbook.png" alt="debate-cxhandbook" border="0">
+                    </a>
+                    <h3 class="resources-title">Extemporaneous Speaking Handbook</h3>
+                </div>
+                <div class="resources-column">
+                    <iframe src="https://cdn.iframe.ly/api/iframe?app=1&amp;url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DWyYDXyb7dSU&amp;key=462812a26b593f2dbfbfcbb14f6d699a">
+                    </iframe>
+                    <h3 class="resources-title">
+                        Extemporaneous Speaking Introduction Video
+                    </h3>
+                </div>
+                <div class="resources-column">
+                    <a target="_blank" href="https://www.uiltexas.org/files/academics/LD23_24_Print.pdf">
+                        <img src="https://i.ibb.co/7vd2C7t/debate-ld-handbook.png" alt="debate-ld-handbook" border="0">
+                    </a>
+                    <h3 class="resources-title">Lincoln Douglas Handbook</h3>
+                </div>
+                <div class="resources-column">
+                    <iframe src="https://cdn.iframe.ly/api/iframe?app=1&amp;url=https%3A%2F%2Fwww.youtube.com%2F%40tobias-ld&amp;key=462812a26b593f2dbfbfcbb14f6d699a">
+                    </iframe>
+                    <h3 class="resources-title">
+                        YouTube Channel on Lincoln Douglas
+                    </h3>
+                </div>
+                <div class="resources-column">
+                    <iframe src="https://cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DVov8e-Ic6mQ&amp;key=462812a26b593f2dbfbfcbb14f6d699a">
+                    </iframe>
+                    <h3 class="resources-title">
+                        Lincoln Douglas Introduction Video
+                    </h3>
+                </div>
+                <div class="resources-column">
+                    <a target="_blank" href="https://www.uiltexas.org/files/academics/ProsePoetry_23_24_Print.pdf">
+                        <img class="notratio" src="https://i.ibb.co/T8Lqrnx/debate-prose-handbook.png" alt="debate-prose-handbook" border="0">v
+                    </a>
+                    <h3 class="resources-title">Prose and Poetry Handbook</h3>
+                </div>
+                <div class="resources-column">
+                    <iframe src="https://cdn.iframe.ly/api/iframe?app=1&amp;url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DRMHck-8Ub6Y&amp;key=462812a26b593f2dbfbfcbb14f6d699a">
+                    </iframe>
+                    <h3 class="resources-title">
+                        Prose and Poetry Introduction Video
+                    </h3>
                 </div>
             </div>
             
         </div>
+
+        <hr class="hor-separator">
+
         <div class="applications-box">
             <h1 class="section-header">
                 Applications
@@ -150,7 +455,7 @@
         </div>
     </div>
 
-    <div class="footer">
+    <div class="footer" id="footer">
         <h6 class="text-footer">
             Managed and Owned By _____
         </h6>
