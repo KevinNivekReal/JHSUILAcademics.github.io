@@ -25,6 +25,11 @@ body {
     margin:0;
 }
 
+.logo {
+    height:50px;
+    margin:10px;
+    margin-bottom: 5px;
+}
 
 .body-header {
     font-family: "kollektif",sans-serif;
@@ -177,7 +182,8 @@ body {
     position:absolute;
     font-family: "garet", sans-serif;
     font-weight:1000;
-    font-size:1vw;
+    font-size:2vw;
+    text-align: center;
   }
   
   .join-now:hover {
@@ -199,8 +205,9 @@ body {
     position: relative;
     z-index:1;
     */
-    height:831px; /*height of the image */
+    height:20%; /*height of the image */
     position:relative;
+    margin:0;
 }
 
 .join-container-text {
@@ -209,20 +216,30 @@ body {
     top: 20%;
     right:10%;
     color:white;
-    font-size:1.3vw;
+    font-size:2vw;
     height:20%;
 }
   
 .footer {
     width:100%;
-    position:relative;
+    margin-top:-10px;
     display:inline-flex;
+    flex-wrap: wrap;
+
     justify-content: space-around;
     background-color: #2b2722;
     color:white;
     font-family: "garet", sans-serif;
     font-weight:1000;
-    font-size:1vw;
+}
+
+.text-footer {
+    font-size: 14px;
+}
+
+.footer-div {
+    margin:5px;
+    height: 70px;
 }
 
 .footer a:visited, .footer a:link {
@@ -305,23 +322,27 @@ body {
 
 /* For the search feature */
 .search-container {
-    width: 200px;
+    width: 205px;
     background-color: white;
-
     position: absolute;
-    right:12.5rem;
+    right: 7.7rem;
     top: 77px;
     z-index:200;
     display:none;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,.2);
 }
-  
+
+.list-container::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
 .item-letter {
     text-decoration: underline;
 }
   
 .list-container {
-    padding: 2px;
+    padding: 0;
     margin: 0;
     width: 100%;
     overflow-y: scroll;
@@ -335,10 +356,14 @@ body {
     list-style: none;
     width: 100%;
     display: block;
-    padding: 5px 5px;
+    margin: 0;
     font-family: "kollektif",sans-serif;
+    padding: 10px 3px 10px 5px;
+    border-bottom: .5px solid gray;
+    border-width: thin;
+    transition: .2s;
 }
-  
+
 .item:hover {
     background-color: #f2f2f2;
     cursor: pointer;
@@ -351,4 +376,150 @@ body {
 
 .search-container ul {
     display:block;
+}
+
+/*mobile*/
+.burger-icon {
+    display: none;
+}
+.burger-icon:hover {
+    cursor: pointer;
+}
+.burger-x {
+    display: none;
+    transform: translateX(-8px);
+}
+.burger-x:hover {
+    cursor:pointer;
+}
+
+.mobile-menu-nav {
+    display: none;
+}
+
+.mobile-contests {
+    margin-left: 20px;
+    display: none;
+    font-size: 15px;
+}
+
+.mobile-contests-text {
+    margin-left: 10px;
+}
+
+.mobile-nav-option-title {
+    margin-left: 20px;
+    line-height:60px;
+    margin-top:0;
+    margin-bottom:0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
+
+.mobile-link:hover, .mobile-nav-option-title:hover{
+    cursor: pointer;
+}
+
+.mobile-link {
+    text-decoration:none;
+}
+
+.mobile-link:hover {
+    text-decoration:underline;
+}
+
+.mobile-link:visited, .mobile-link:link {
+    color:black;
+}
+
+.mobile-contests-title {
+    font-family: "kollektif", sans-serif;
+}
+
+.mobile-contests-text, .mobile-nav-option-title {
+    font-family: "baron", sans-serif;
+}
+
+.mobile-contests-text a {
+    text-decoration:none;
+}
+
+.mobile-contests-text a:hover {
+    text-decoration:underline;
+}
+
+.mobile-contests-text a:visited, .mobile-contests-text a:link {
+    color:black;
+}
+@media (max-width:1375px) {
+    .text-header {
+        font-size: 1em;
+    } 
+    .logo {
+        height: 30px;
+    }
+    
+}
+
+@media (min-width: 1221px) {
+    .burger-icon {
+        display: none !important;
+    }
+
+    .burger-x {
+        display: none !important;
+    }
+}
+
+@media (max-width: 1220px) {
+    .text-header, #search {
+        display: none;
+    }
+    .navbar {
+        display: none !important;
+    }
+    .header {
+        padding: 10px;
+    }
+    .burger-icon {
+        display: block ;
+    }
+    .burger-x {
+        display: none ;
+    }
+}
+
+@media (max-width: 725px) {
+    .footer {
+        flex-direction: column;
+    }
+    .text-footer {
+        text-align: center;
+        font-size: 10px
+    }
+    .footer-div {
+        height:50px;
+    }
+
+    .body-image {
+        width:40% !important;
+    }
+
+    .container-text {
+        font-size: 2.5vw;
+    }
+
+}
+
+@media (min-width: 769px) {
+    .join-now, .join-container-text {
+        font-size: 1vw;
+    }
+}
+@media (max-width: 422px) {
+    .join-now {
+        width: 30%;
+    }
 }
