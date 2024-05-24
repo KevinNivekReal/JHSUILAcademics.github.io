@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Issues & Events</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="contests.css">
+</head>
+<body>
+    <div class="header" id="header">
+        
+        <a href="../index.html"><img class="logo" src="../images/logo.png"></a>
+        <ul class="main-nav">
+            
+            <li class="text-header">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="text-header  contests-btn" onclick="openMenu()" >
+                Contests
+                <img class="carrot" id="carrot" src="../images/dropdown-carrot.png" height="10px">
+            </li>
+            <li class="text-header">
+                <a href="coaches.html">Coaches</a>
+            </li>
+            <li class="text-header">
+                <a href="../schedule.html">Schedule</a>
+            </li>
+            
+                <input type="text" id="search" onfocusin="showSearch()" onfocusout="showSearch()" onkeyup="changed()">
+                <div class="search-container" id="search-container">
+                    <ul class="list-container">
+                        <a href="accounting.html">
+                            <li class="item" id="accounting">
+                                Accounting
+                            </li>
+                        </a>
+                        <a href="../coaches.html#flores">
+                            <li class="item" id="alyssa flores">
+                                Alyssa flores
+                            </li>
+                        </a>
+                        <a href="../coaches.html#tremaine">
+                            <li class="item" id="amanda tremaine">
+                                Amanda tremaine
+                            </li>
+                        </a>
+                        <a href="../coaches.html#treadway">
+                            <li class="item" id="beki treadway">
+                                Beki treadway
+                            </li>
+                        </a>
+                        <a href="../coaches.html#bronaugh">
+                            <li class="item" id="bert bronaugh">
+                                Bert bronaugh
+                            </li>
+                        </a>
+                        <a href="../coaches.html#crowe">
+                            <li class="item" id="britney crowe">
+                                Britney crowe
+                            </li>
+                        </a>
+                        <a href="calculator-applications.html">
+                            <li class="item" id="calculator applications">
+                                Calculator applications
+                            </li>
+                        </a>
+                        <a href="../coaches.html#staab">
+                            <li class="item" id="christine staab">
+                                Christine staab
+                            </li>
+                        </a>
+                        <a href="computer-science.html">
+                            <li class="item" id="computer science">
+                                Computer science
+                            </li>
+                        </a>
+                        <a href="copy-editing.html">
+                            <li class="item" id="copy editing">
+                                Copy editing
+                            </li>
+                        </a>
+                        <a href="current-issues.html">
+                            <li class="item" id="current issues and events">
+                                Current issues and events
+                            </li>
+                        </a>
+                        <a href="../coaches.html#sanderson">
+                            <li class="item" id="debra sanderson">
+                                Debra sanderson
+                            </li>
+                        </a>
+                        <a href="../coaches.html#robinson">
+                            <li class="item" id="devon robinson">
+                                Devon robinson
+                            </li>
+                        </a>
+                        <a href="editorial-writing.html">
+                            <li class="item" id="editorial writing">
+                                Editorial writing
+                            </li>
+                        </a>
+                        <a href="feature-writing.html">
+                            <li class="item" id="feature writing">
+                                Feature writing
+                            </li>
+                        </a>
+                        <a href="headline-writing.html">
+                            <li class="item" id="headline writing">
+                                Headline writing
+                            </li>
+                        </a>
+                        <a href="../coaches.html#john">
+                            <li class="item" id="jude john">
+                                Jude john
+                            </li>
+                        </a>
+                        <a href="literary-criticism.html">
+                            <li class="item" id="literary criticism">
+                                Literary criticism
+                            </li>
+                        </a>
+                        <a href="mathematics.html">
+                            <li class="item" id="mathematics">
+                                Mathematics
+                            </li>
+                        </a>
+                        <a href="news-writing.html">
+                            <li class="item" id="news writing">
+                                News writing
+                            </li>
+                        </a>
+                        <a href="number-sense.html">
+                            <li class="item" id="number sense">
+                                Number sense
+                            </li>
+                        </a>
+                        <a href="one-act-play.html">
+                            <li class="item" id="one act play">
+                                One act play
+                            </li>
+                        </a>
+                        <a href="ready-writing.html">
+                            <li class="item" id="ready writing">
+                                Ready writing
+                            </li>
+                        </a>
+                        <a href="robotics.html">
+                            <li class="item" id="robotics">
+                                Robotics
+                            </li>
+                        </a>
+                        <a href="science.html">
+                            <li class="item" id="science">
+                                Science
+                            </li>
+                        </a>
+                        <a href="social-studies.html">
+                            <li class="item" id="social studies">
+                                Social studies
+                            </li>
+                        </a>
+                        <a href="speech-and-debate.html">
+                            <li class="item" id="speech and debate">
+                                Speech and debate
+                            </li>
+                        </a>
+                        <a href="spelling.html">
+                            <li class="item" id="spelling">
+                                Spelling
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <label for="search"><img class="search-button text-header" src="../images/search-icon.png" height="24px">
+                </label>
+            
+            <div class="navbar" id="navbar">
+                <div class="column">
+                    <h2 class="navbar-title">Math</h2>
+                    <p class="navbar-text"><a href="contests/accounting.html">Accounting</a></p>
+                    <p class="navbar-text"><a href="contests/calculator-applications.html">Calculator Applications</a></p>
+                    <p class="navbar-text"><a href="contests/mathematics.html">Mathematics</a></p>
+                    <p class="navbar-text"><a href="contests/number-sense.html">Number Sense</a></p>
+
+                    <h2 class="navbar-title">Reading</h2>
+                    <p class="navbar-text"><a href="contests/literary-criticism.html">Literary Criticism</a></p>
+                </div>
+                <div class="column">
+                    <h2 class="navbar-title">Writing</h2>
+                    <p class="navbar-text"><a href="contests/copy-editing.html">Copy Editing</a></p>
+                    <p class="navbar-text"><a href="contests/editorial-writing.html">Editorial Writing</a></p>
+                    <p class="navbar-text"><a href="contests/feature-writing.html">Feature Writing</a></p>
+                    <p class="navbar-text"><a href="contests/headline-writing.html">Headline Writing</a></p>
+                    <p class="navbar-text"><a href="contests/news-writing.html">News Writing</a></p>
+                    <p class="navbar-text"><a href="contests/ready-writing.html">ready Writing</a></p>
+                    <p class="navbar-text"><a href="contests/spelling.html">Spelling</a></p>                
+                </div>
+                <div class="column">
+                    <h2 class="navbar-title">Social Studies</h2>
+                    <p class="navbar-text"><a href="contests/current-issues.html">Current Issues & Events</a></p>
+                    <p class="navbar-text"><a href="contests/social-studies.html">Social Studies</a></p>
+                    
+                    <h2 class="navbar-title">Debate</h2>
+                    <p class="navbar-text"><a href="contests/speech-and-debate.html">Speech and Debate</a></p>
+                    
+                    <h2 class="navbar-title">Theater</h2>
+                    <p class="navbar-text"><a href="contests/one-act-play.html">one Act play</a></p>
+                </div>
+                <div class="column">
+                    <h2 class="navbar-title">Science</h2>
+                    <p class="navbar-text"><a href="contests/computer-science.html">Computer Science</a></p>
+                    <p class="navbar-text"><a href="contests/robotics.html">robotics</a></p>
+                    <p class="navbar-text"><a href="contests/science.html">Science</a></p>                
+                </div>
+                
+            </div>
+        </ul>
+        <img class="burger-icon" id="burger-icon" onclick="changeBurger()" src="../images/burger-bar.svg" height="35px">
+        <img class="burger-x" id="burger-x" onclick="changeBurger()" src="../images/burger-x.svg" width="20px">
+    </div>
+
+    <div class="mobile-menu-nav" id="mobile-menu-nav">
+        <div class="mobile-menu-nav-option">
+            <h1 class="mobile-nav-option-title" onclick="openEvent(1)">Contests <img class="carrot"src="../images/dropdown-carrot.png" height="10px"></h1>
+
+            <div class="mobile-contests" id="mobile-contests">
+                
+                <h2 class="mobile-contests-title">Math</h2>
+                <p class="mobile-contests-text"><a href="accounting.html">Accounting</a></p>
+                <p class="mobile-contests-text"><a href="calculator-applications.html">Calculator Applications</a></p>
+                <p class="mobile-contests-text"><a href="mathematics.html">Mathematics</a></p>
+                <p class="mobile-contests-text"><a href="number-sense.html">Number Sense</a></p>
+
+                    <h2 class="mobile-contests-title">Reading</h2>
+                    <p class="mobile-contests-text"><a href="literary-criticism.html">Literary Criticism</a></p>
+                
+                
+                    <h2 class="mobile-contests-title">Writing</h2>
+                    <p class="mobile-contests-text"><a href="copy-editing.html">Copy Editing</a></p>
+                    <p class="mobile-contests-text"><a href="editorial-writing.html">Editorial Writing</a></p>
+                    <p class="mobile-contests-text"><a href="feature-writing.html">Feature Writing</a></p>
+                    <p class="mobile-contests-text"><a href="headline-writing.html">Headline Writing</a></p>
+                    <p class="mobile-contests-text"><a href="news-writing.html">News Writing</a></p>
+                    <p class="mobile-contests-text"><a href="ready-writing.html">ready Writing</a></p>
+                    <p class="mobile-contests-text"><a href="spelling.html">Spelling</a></p>                
+                
+                    <h2 class="mobile-contests-title">Social Studies</h2>
+                    <p class="mobile-contests-text"><a href="current-issues.html">Current Issues & Events</a></p>
+                    <p class="mobile-contests-text"><a href="social-studies.html">Social Studies</a></p>
+                    
+                    <h2 class="mobile-contests-title">Debate</h2>
+                    <p class="mobile-contests-text"><a href="speech-and-debate.html">Speech and Debate</a></p>
+                    
+                    <h2 class="mobile-contests-title">Theater</h2>
+                    <p class="mobile-contests-text"><a href="one-act-play.html">one Act play</a></p>
+                
+                    <h2 class="mobile-contests-title">Science</h2>
+                    <p class="mobile-contests-text"><a href="computer-science.html">Computer Science</a></p>
+                    <p class="mobile-contests-text"><a href="robotics.html">robotics</a></p>
+                    <p class="mobile-contests-text"><a href="science.html">Science</a></p>
+            </div>
+        </div>
+        <hr class="mobile-menu-separator">
+        <a class="mobile-link" href="../coaches.html">
+            <div class="mobile-menu-nav-option">
+                <h1 class="mobile-nav-option-title">Coaches</h1>
+            </div>
+        </a>
+        <hr class="mobile-menu-separator">
+        <a class="mobile-link" href="../schedule.html">
+            <div class="mobile-menu-nav-option">
+                <h1 class="mobile-nav-option-title">Schedule</h1>
+            </div>
+        </a>
+    </div>
+
+    <div class="body" id="body">
+        <div class="summary-section">
+            <div class="name-column">
+                <h1 class="section-header">
+                    Current Issues & Events
+                </h1>
+                <img class="contest-image" src="../images/curren-issues-and-events-image.png">
+            </div>
+            <div class="summary-column">
+                <div class="summary-box">
+                    <h1 class="summary-title">
+                        Coach
+                    </h1>
+                    <h3 class="summary-description">
+                        Mr. John
+                    </h3>
+                </div>
+                <div class="summary-box">
+                    <h1 class="summary-title">
+                        Meeting Schedule
+                    </h1>
+                    <h3 class="summary-description">
+                        TBD
+                    </h3>
+                </div>
+                <div class="summary-box">
+                    <h1 class="summary-title">
+                        Room Number
+                    </h1>
+                    <h3 class="summary-description">
+                        TBD
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="applications-box"> <!-- uses the same class as the applications box, but its the overview section-->
+            <h1 class="section-header">
+                Official UIL Overview
+            </h1>
+            <div class="description-box">
+                <h2 class="applications-description">
+                    The contest focuses on a basic knowledge of current state, national and world events and issues. The contest consists of 40 multiple-choice questions and an essay that challenges students to understand not just what is happening in the world today, but why and how it’s happening and what it means to us as citizens of the United States.                </h2>
+            </div>
+        </div>
+
+        <hr class="hor-separator">
+
+        <div class="resources-box">
+                <h1 class="section-header">
+                    Resources
+                </h1>
+            
+            <div class="resources-wrapper">
+                <div class="resources-column">
+                    <a target="_blank" href="https://www.uiltexas.org/files/academics/CIE_Contest_21-22b.pdf">
+                        <img src="https://i.ibb.co/bzXMXkR/cie-introduction.png" alt="cie-introduction" border="0">
+                    </a>
+                    <h3 class="resources-title">Introduction</h3>
+                </div>
+                <div class="resources-column">
+                    <a target="_blank" href="https://www.uiltexas.org/files/academics/Suggestions_for_CIE_Coaches.pdf">
+                        <img src="https://i.ibb.co/s1YRWK3/cie-tips.png" alt="cie-tips" border="0">
+                    </a>
+                    <h3 class="resources-title">Tips and Suggestions</h3>
+                </div>
+                <div class="resources-column">
+                    <a target="_blank" href="https://www.uiltexas.org/academics/info/current-issues-and-events-essay">
+                        <img class="notratio" src="https://i.ibb.co/8KG7XBy/cie-essayhelp.png" alt="cie-essayhelp" border="0">
+                    </a>
+                    <h3 class="resources-title">Essay Help</h3>
+                </div>
+                <div class="resources-column">
+                    <a target="_blank" href="https://www.uiltexas.org/files/academics/CIE_State_2017_Sample.pdf">
+                        <img src="https://i.ibb.co/z80rPkN/cie-sampletestandkey.png" alt="cie-sampletestandkey" border="0">
+                    </a>
+                    <h3 class="resources-title">Sample Test + Essay and Key</h3>
+                </div>
+                <div class="resources-column">
+                    <a target="_blank" href="https://www.uiltexas.org/files/academics/4-CIE__SS_Rubric.pdf">
+                        <img src="https://i.ibb.co/wsxdpyf/cie-essayrubric.png" alt="cie-essayrubric" border="0">
+                    </a>
+                    <h3 class="resources-title">Essay Rubric</h3>
+                </div>
+                <div class="resources-column">
+                    <a target="_blank" href="https://www.uiltexas.org/academics/info/current-issues-and-events-essay-prompts">
+                        <img src="https://i.ibb.co/sgsCnfp/cie-essayprompts.png" alt="cie-essayprompts" border="0">
+                    </a>
+                    <h3 class="resources-title">Essay Sample Prompts</h3>
+                </div>
+                <div class="resources-column">
+                    <a target="_blank" href="https://www.youtube.com/watch?v=jV1aplg7yBA&pp=ygUdY3VycmVudCBpc3N1ZXMgYW5kIGV2ZW50cyB1aWw%3D">
+                        <img class="notratio" src="https://i.ibb.co/4gH6LHf/cie-essayhelpvid.png" alt="cie-essayhelpvid" border="0">                    </a>
+                    <h3 class="resources-title">Essay Help Video</h3>
+                </div>
+            </div>
+            
+        </div>
+
+        <hr class="hor-separator">
+
+        <div class="applications-box">
+            <h1 class="section-header">
+                Applications
+            </h1>
+            <div class="description-box">
+                <h2 class="applications-description">
+                    Often, people are stuck in their own world, doing their own thing, while there is a whole other world around them, which they are blind to see. Participating in this contest will allow you to open your eyes and see all the events happening all around the world. Knowing what is happening all around the world will make you keep an open mind in your own life and lead you to new paths.
+
+                </h2>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="footer" id="footer">
+        <h6 class="text-footer">
+            Managed and Owned By _____
+        </h6>
+        <h6 class="text-footer">
+            <a href="../index.html">Home</a>
+        </h6>
+        <h6 class="text-footer">
+            <a href="../contact.html">Contact</a>
+        </h6>
+            
+        <h6 class="text-footer">
+            <a href="https://www.uiltexas.org/academics">Official UIL Academics Link</a>
+        </h6>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>

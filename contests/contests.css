@@ -1,0 +1,182 @@
+@font-face {
+    font-family: "kollektif", sans-serif;
+    src: url("../kollektif-font/Kollektif.ttf");
+}
+
+@font-face {
+    font-family: "garet", sans-serif;
+    src: url("../garet-font/Garet-Book.otf");
+}
+
+body {
+    background-color: #FFFAEB;
+}
+
+.hor-separator {
+    width: 30%;
+    position: relative;
+    border: 3px solid black;
+}
+
+/* For the summary section */
+.summary-section {
+    height:500px;
+    width:100%;
+    display:flex;
+    margin-top:5%;
+}
+
+.name-column,.summary-column {
+    width:50%;
+}
+
+.name-column{
+    text-align:center;
+}
+
+.contest-image {
+    padding-top:20px;
+    height:400px;
+}
+
+.section-header { /* this style goes for all the section headers */
+    font-family: "kollektif", sans-serif;
+    font-size:3em;
+    font-weight: 900;
+    text-align: center;
+    margin:10px;
+}
+.summary-box {
+    width:50%;
+    height:100px;
+    margin:25px;
+    margin-top: 40px;
+    padding:10px;
+    border: 3px solid black;
+    position:relative;
+    left:25%;
+}
+
+.summary-title {
+    font-family: "kollektif", sans-serif;
+    font-size:1.7em;
+    font-weight:900;
+    text-align:center;
+}
+
+.summary-description {
+    font-family: "garet", sans-serif;
+    font-weight:900;
+    font-size:1.2em;
+    text-align:center;
+}
+
+/* for the resources section */
+.resources-box {
+
+    width:100%;
+    margin-top:5%;
+    margin-bottom:5%;
+
+}
+
+
+.resources-box h1 {
+    margin-top:70px;
+    margin-bottom:50px;
+}
+.resources-wrapper {
+    display:flex;
+    flex-wrap: wrap;
+    width:90%;
+    left: 5%;
+    position:relative;
+    justify-content: center;
+}
+
+.resources-column {
+    width:300px;
+    border:5px solid black;
+    border-radius: 20px;
+    background-color: white;
+    padding: 10px;
+    margin: 5px 30px 30px 30px;
+}
+
+.resources-column:hover {
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,.2);
+    border-color: gray;
+}
+
+.resources-column img {
+    width:300px;
+}
+
+.notratio {
+    margin-top: 30%;
+}
+
+.resources-title {
+    text-align:center;
+    font-family: "garet", sans-serif;
+}
+
+iframe {
+    margin-top:45%;
+    width:300px;
+    border:0;
+}
+/* for the applications section */
+.applications-box {
+    width:100%;
+    margin-top:10%;
+}
+
+.description-box {
+    width:60%;
+    position:relative;
+    left:20%;
+    height:50%;
+    margin-bottom: 5%;
+}
+
+.applications-description {
+    font-family: "garet", sans-serif;
+    font-weight:900;
+    font-size: 1.5em;
+    text-align:center;
+}
+
+@media (max-width:1015px) {
+    .summary-section {
+        height:1000px;
+        display: block;
+    }
+    .section-header {
+        font-size: 2em;
+    }
+    .name-column {
+
+        width: 100%;
+    }
+    .summary-column {
+        position: relative;
+        left: -8%;
+        width: 100%;
+    }
+    .contest-image {
+        height:300px;
+    }
+    .summary-title {
+        font-size: 1.4em;
+    }
+    .summary-description{
+        font-size: 0.8em;
+    }
+    .applications-description{
+        font-size: 1em;
+    }
+    .resources-column,.resources-column img, iframe {
+        width: 200px;
+    }
+}

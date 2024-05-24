@@ -1,0 +1,202 @@
+/* 
+=========================
+Fonts
+=========================
+
+font-family: 'Outfit', sans-serif;
+
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+/* 
+========================
+Variables
+========================
+*/
+
+:root {
+  font-size: 15px;
+
+  /* Primary */
+  --var-soft-blue: hsl(215, 51%, 70%);
+  --var-cyan: hsl(178, 100%, 50%);
+  /* Neutral */
+  --var-main: #f2f2f2;
+  --var-card: #f7ed71;
+  --var-line-dark: #040404;
+  --var-lightest: #5e17eb;
+
+  /* Fonts */
+
+  --var-heading: normal normal 800 2.5em/1em "Outfit", sans-serif;
+
+  --var-med-heading: normal normal 600 2em/1em "Outfit", sans-serif;
+
+  --var-small-heading: normal normal 400 1em/1em "Outfit", sans-serif;
+
+  --var-para: normal normal 300 1em/1.55em "Outfit", sans-serif;
+}
+
+/* 
+=======================
+Setup
+=======================
+*/
+
+body {
+  background-color: var(--var-main);
+  max-width: 100%;
+}
+
+/* 
+
+Eye view
+
+https://i.postimg.cc/9MtT4GZY/view.png' border='0' alt='view */
+
+/*
+=========================
+Font Styling
+=========================
+*/
+
+.title {
+  font: var(--var-heading);
+  color: var(--var-lightest);
+  padding: 1.2em 0 0 1em;
+}
+
+.coach-name {
+  text-align: center;
+  border: 5px solid black;
+  border-radius: 30px;
+  width:80%;
+  padding: 2%;
+  margin-top: 0;
+  font-size: 1.5em;
+  font-family: 'outfit',sans-serif;
+  color: black;
+  background-color:#f2f2f2;
+  position: relative;
+  top: -35px;
+  left: 7%;
+}
+/*
+.coach-role {
+  font: var(--var-small-heading);
+  font-style: italic;
+  color: var(--var-lightest);
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+}
+*/
+.classes {
+  padding: 0%;
+  margin-top:-50px;
+  font: var(--var-para);
+  color: var(--var-line-dark);
+  list-style-type: none;
+  text-align: center;
+  font-weight: 500;
+}
+
+.coach-pic {
+  width: 100%;
+  height: 250px;
+  border-radius: 15px;
+  display: block;
+}
+
+
+/* 
+=====================
+Classes
+=====================
+*/
+
+/* LAYOUT */
+.coaches {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.coach-card {
+  width: 15em;
+  height: 25em;
+  margin: 2em ;
+  background: rgb(247, 237, 113);
+  background: rgb(238, 182, 86);
+  background: linear-gradient(
+    45deg,
+    rgba(238, 182, 86, 1) 0%,
+    rgba(247, 237, 113, 1) 100%
+  );
+  border-radius: 15px;
+  margin-bottom: 1rem;
+  padding: 2rem;
+  box-shadow: .5em .5em #838383
+}
+
+.img-container {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+/* Details */
+
+
+
+
+.coach-card::before {
+  
+  width: 25%;
+  position: absolute;
+}
+
+
+.img-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -500px;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: skewX(-30deg);
+  transition: 0.3s;
+}
+
+.img-container:hover::before {
+  left: 250px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+li a {
+  color: black;
+}
+
+
+@media (min-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+/* Teacher Colors*/
+
+@media (max-width: 1000px) {
+  .coach-card {
+    width: 10em;
+    height: 20em;
+  }
+
+  .coach-pic {
+    height: 167px;
+  }
+
+
+}
