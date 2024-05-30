@@ -236,11 +236,7 @@ body {
 .text-footer {
     font-size: 14px;
     margin: 10px;
-}
-
-.footer-div {
-    margin:5px;
-    height: 70px;
+    line-height: 60px;
 }
 
 .footer a:visited, .footer a:link {
@@ -498,12 +494,9 @@ body {
     }
     .text-footer {
         text-align: center;
-        font-size: 10px
-    }
-    .footer-div {
-        height:50px;
-    }
+        font-size: 10px;
 
+    }
     .body-image {
         width:40% !important;
     }

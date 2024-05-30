@@ -16,7 +16,7 @@ Variables
 */
 
 :root {
-  font-size: 15px;
+
 
   /* Primary */
   --var-soft-blue: hsl(215, 51%, 70%);
@@ -181,7 +181,7 @@ li a {
 
 
 @media (min-width: 600px) {
-  body {
+  #body {
     font-size: 18px;
   }
 }
